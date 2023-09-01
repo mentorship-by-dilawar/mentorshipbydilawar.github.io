@@ -9,6 +9,7 @@
   <!-- Font Awesome CSS Link -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
  <link rel="stylesheet" href="style.css">
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-019FF0PCS3"></script>
@@ -471,6 +472,7 @@
                         </footer>
           <!-- Bootstrap JS and Font Awesome JS Links (for icons) -->
  <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>                 
@@ -484,6 +486,21 @@
         buttons: ["zoom", "close"],
       });
     });
+     
+     // Added SA
+
+     // Wait for the document to be fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Delay the display of the message by 5 seconds (5000 milliseconds)
+            setTimeout(function () {
+                Swal.fire({
+                    title: 'New Batch Starting Soon!',
+                    text: 'Register Now!',
+                    icon: 'info',
+                    confirmButtonText: 'Close'
+                });
+            }, 5000);
+        });
   </script>                     
 </body>
 </html>
