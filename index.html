@@ -127,7 +127,23 @@ td {
     z-index: -1;
 }
 
-
+/* For modern browsers supporting backdrop-filter */
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .navbar {
+        background: transparent; /* Set a transparent background for modern browsers */
+    }
+    .navbar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); /* For older WebKit-based browsers */
+        z-index: -1;
+    }
+}
 
   </style>
 </head>
@@ -140,7 +156,7 @@ td {
     width: 100%;
     z-index: 1000;
     margin-top: 5px;
-    background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(10px);
+    background: rgb(255 255 255 / 10%); backdrop-filter: blur(10px);
  ">
         <a class="navbar-brand" href="https://mentorshipbydilawar.online" style="color: white;
         padding: 5px;
