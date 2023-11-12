@@ -889,6 +889,7 @@ td {
 
           <!-- Bootstrap JS and Font Awesome JS Links (for icons) -->
  <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
@@ -918,6 +919,51 @@ td {
                 });
             }, 10000);
         });
+     // Added Connefti
+       const count = 200,
+    defaults = {
+      origin: { y: 0.7 },
+    };
+
+  function fire(particleRatio, opts) {
+    confetti(
+      Object.assign({}, defaults, opts, {
+        particleCount: Math.floor(count * particleRatio),
+      })
+    );
+  }
+     
+  function startConfetti() {
+    fire(0.25, {
+      spread: 26,
+      startVelocity: 55,
+    });
+
+    fire(0.2, {
+      spread: 60,
+    });
+
+    fire(0.35, {
+      spread: 100,
+      decay: 0.91,
+      scalar: 0.8,
+    });
+
+    fire(0.1, {
+      spread: 120,
+      startVelocity: 25,
+      decay: 0.92,
+      scalar: 1.2,
+    });
+
+    fire(0.1, {
+      spread: 120,
+      startVelocity: 45,
+    });
+  }
+
+  // Wait for 10 seconds and then start the confetti animation
+  setTimeout(startConfetti, 10000);
   </script>                     
 </body>
 </html>
