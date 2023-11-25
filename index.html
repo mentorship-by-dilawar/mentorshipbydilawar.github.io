@@ -115,6 +115,16 @@ td {
   padding: 5px;
   border-radius: 10px;
 }
+   #progress-bar {
+      width: 0;
+      height: 5px;
+      background: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      transition: width 0.3s ease;
+    }
   </style>
 </head>
 <body>
@@ -160,6 +170,17 @@ td {
         </div>
       </div>
 </nav>
+<!--   Added Preloader -->
+<div id="progress-bar"></div>
+<script>
+  document.addEventListener("scroll", function() {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollProgress = (scrollTop / scrollHeight) * 100;
+    document.getElementById("progress-bar").style.width = scrollProgress + "%";
+  });
+</script>
+<!--   Ended Preloader -->
       <div class="container mt-5">
         <div class="row justify-content-center">
                 <div class="card course-card" style="padding: 8px;">
