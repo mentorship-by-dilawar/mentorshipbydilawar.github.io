@@ -51,5 +51,11 @@
       border-radius: 50%;
     }
   }
+  .modules{
+    background-color: #17a2b8;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
 
  
