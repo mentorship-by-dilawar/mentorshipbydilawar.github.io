@@ -52,7 +52,7 @@
     }
   }
   .modules{
-    background-color: #17a2b8;
+    background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%);
     color: white;
     padding: 4px;
     border-radius: 5px;
