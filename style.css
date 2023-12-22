@@ -10,7 +10,7 @@
     }
   }
 
-  .rainbow {
+  /* .rainbow {
         position: relative;
   z-index: 0;
   width: 250px;
@@ -20,9 +20,9 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
     /* New animation style */
-    &::before {
+    /* &::before {
       content: '';
       position: absolute;
       z-index: -2;
@@ -36,9 +36,9 @@
       background-position: 0 0, 100% 0, 100% 100%, 0 100%;
       background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
       animation: rotate 4s linear infinite;
-    }
+    } */
     /* Your image */
-    &::after {
+    /* &::after {
       content: '';
       position: absolute;
       z-index: -1;
@@ -50,7 +50,7 @@
       background-size: cover;
       border-radius: 50%;
     }
-  }
+  } */
   .modules{
     background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%);
     color: white;
