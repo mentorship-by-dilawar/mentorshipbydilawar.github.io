@@ -16,7 +16,8 @@
     color: white;
     padding: 3px;
     border-radius: 0px 8px 0px 8px;
-    box-shadow: rgb(71 9 245 / 35%) 0px 8px 16px;
+    box-shadow: rgb(71 9 245 / 35%) 0px 4px 16px;
+    /* box-shadow: rgb(71 9 245 / 33%) 0px -6px 16px; */
   }
   .choice{
     margin: -6px auto 5px auto;
