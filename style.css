@@ -14,7 +14,7 @@
   .modules{
     background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%);
     color: white;
-    padding: 2px;
+    padding: 3px;
     border-radius: 0px 8px 0px 8px;
   }
   .choice{
