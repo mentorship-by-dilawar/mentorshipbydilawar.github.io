@@ -1076,7 +1076,9 @@ td {
 
   window.addEventListener('beforeunload', function (e) {
     if (!isConfirmationShown) {
-      const confirmationMessage = 'Are you sure you want to exit? 😢';
+      e.preventDefault();
+
+      const confirmationMessage = 'Are you sure you want to exit? 😥';
 
       // Use SweetAlert for a more visually appealing notification
       Swal.fire({
@@ -1087,20 +1089,19 @@ td {
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonText: 'Yes, exit!',
-        cancelButtonText: 'Cancel',
-        allowOutsideClick: false,
-        allowEscapeKey: false
+        cancelButtonText: 'Cancel'
       }).then((result) => {
         isConfirmationShown = true; // Set flag to true to avoid showing multiple alerts
         if (result.isConfirmed) {
           // User clicked "Yes, exit!"
           // Perform any necessary cleanup or actions here
-          // For now, just simulate the exit by preventing the default behavior
+          // For now, just simulate the exit
+          Swal.fire('Exited!', 'You have exited the website.', 'success');
         } else {
           // User clicked "Cancel" or closed the SweetAlert
           // Continue staying on the page
           isConfirmationShown = false; // Reset the flag for future unload events
-          e.preventDefault();
+          e.returnValue = 'Custom message'; // Set a custom message for the browser's default alert
         }
       });
     }
@@ -1115,7 +1116,10 @@ td {
 
   // Event listener for handling page refresh
   window.addEventListener('unload', function () {
-    isConfirmationShown = false; // Reset the flag when the page is unloaded (refreshed)
+    if (!isConfirmationShown) {
+      // Reset the flag when the page is unloaded (refreshed) if confirmation is not shown
+      isConfirmationShown = false;
+    }
   });
 </script>
    <script>
