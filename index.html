@@ -1076,9 +1076,9 @@ td {
 
   window.addEventListener('beforeunload', function (e) {
     if (!isConfirmationShown) {
-      e.preventDefault();
+      e.returnValue = ''; // Set to an empty string to minimize interference
 
-      const confirmationMessage = 'Are you sure you want to exit? 😥';
+      const confirmationMessage = 'Are you sure you want to exit? 😢';
 
       // Use SweetAlert for a more visually appealing notification
       Swal.fire({
@@ -1097,11 +1097,11 @@ td {
           // Perform any necessary cleanup or actions here
           // For now, just simulate the exit
           Swal.fire('Exited!', 'You have exited the website.', 'success');
+          window.onbeforeunload = null; // Remove the event handler to avoid interference
         } else {
           // User clicked "Cancel" or closed the SweetAlert
           // Continue staying on the page
           isConfirmationShown = false; // Reset the flag for future unload events
-          e.returnValue = 'Custom message'; // Set a custom message for the browser's default alert
         }
       });
     }
@@ -1122,6 +1122,8 @@ td {
     }
   });
 </script>
+
+<!-- Ended Exit Button Noti -->
    <script>
     $(document).ready(function() {
       $('[data-fancybox="gallery"]').fancybox({
