@@ -1105,18 +1105,6 @@ td {
       });
     }
   });
-
-  // Additional event listener to handle navigation keys (e.g., backspace)
-  window.addEventListener('keydown', function (e) {
-    if (e.key === 'Backspace') {
-      isConfirmationShown = true; // Set flag to true to avoid showing multiple alerts
-    }
-  });
-
-  // Event listener for handling page refresh
-  window.addEventListener('unload', function () {
-    isConfirmationShown = false; // Reset the flag when the page is unloaded (refreshed)
-  });
 </script>
    <script>
     $(document).ready(function() {
