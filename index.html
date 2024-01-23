@@ -1061,37 +1061,6 @@ td {
               }).showToast();
             }, 5000); // 5 seconds after the page load
           </script>
-          <script>
-            window.addEventListener('beforeunload', function (e) {
-              e.preventDefault();
-              e.returnValue = '';
-          
-              const confirmationMessage = 'Are you sure you want to exit? 😥';
-          
-              // Use SweetAlert for a more visually appealing notification
-              Swal.fire({
-                title: 'Confirmation',
-                text: confirmationMessage,
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, exit!',
-                cancelButtonText: 'Cancel'
-              }).then((result) => {
-                if (result.isConfirmed) {
-                  // User clicked "Yes, exit!"
-                  // Perform any necessary cleanup or actions here
-                  // For now, just simulate the exit by closing the SweetAlert
-                  Swal.fire('Exited!', 'You have exited the website.', 'success');
-                } else {
-                  // User clicked "Cancel" or closed the SweetAlert
-                  // Continue staying on the page
-                  e.returnValue = null;
-                }
-              });
-            });
-          </script>
  <script src="script.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -1121,6 +1090,48 @@ td {
                 });
             }, 8000);
         });
+        // Added Exit button Notification
+        let isConfirmationShown = false;
+
+window.addEventListener('beforeunload', function (e) {
+  if (!isConfirmationShown) {
+    e.preventDefault();
+    e.returnValue = '';
+
+    const confirmationMessage = 'Are you sure you want to exit? 😢';
+
+    // Use SweetAlert for a more visually appealing notification
+    Swal.fire({
+      title: 'Confirmation',
+      text: confirmationMessage,
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, exit!',
+      cancelButtonText: 'Cancel'
+    }).then((result) => {
+      isConfirmationShown = true; // Set flag to true to avoid showing multiple alerts
+      if (result.isConfirmed) {
+        // User clicked "Yes, exit!"
+        // Perform any necessary cleanup or actions here
+        // For now, just simulate the exit by closing the SweetAlert
+        Swal.fire('Exited!', 'You have exited the website.', 'success');
+      } else {
+        // User clicked "Cancel" or closed the SweetAlert
+        // Continue staying on the page
+        e.returnValue = null;
+      }
+    });
+  }
+});
+
+// Additional event listener to handle navigation keys (e.g., backspace)
+window.addEventListener('keydown', function (e) {
+  if (e.key === 'Backspace') {
+    isConfirmationShown = true; // Set flag to true to avoid showing multiple alerts
+  }
+});
      // Added Connefti
      // Half Screen Animation
 // Wrap your animation code in a setTimeout function
