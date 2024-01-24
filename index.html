@@ -1044,22 +1044,21 @@ td {
                         </footer>
           <!-- Bootstrap JS and Font Awesome JS Links (for icons) -->
           <script>
-            // Event listener for leaving the page
             window.addEventListener('beforeunload', function (e) {
-              // Show SweetAlert notification
+              e.preventDefault();
+              e.returnValue = '';
               Swal.fire({
                 title: 'Are you sure you want to exit?',
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonText: 'Yes, exit!',
-                cancelButtonText: 'Cancel'
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes',
+                cancelButtonText: 'No'
               }).then((result) => {
                 if (result.isConfirmed) {
-                  // User confirmed, you can perform additional actions if needed
-                } else {
-                  // User canceled, prevent page unload
-                  e.returnValue = ''; // For older browsers
-                  e.preventDefault(); // For modern browsers
+                  window.removeEventListener('beforeunload', function (e) {});
+                  window.close();
                 }
               });
             });
