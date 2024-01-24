@@ -1044,52 +1044,53 @@ td {
                         </footer>
           <!-- Bootstrap JS and Font Awesome JS Links (for icons) -->
           <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
           <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                // Add event listener to window beforeunload event
-                window.addEventListener("beforeunload", function (e) {
-                    // Display SweetAlert confirmation dialog
-                    Swal.fire({
-                        title: 'Confirmation',
-                        text: 'Are you sure you want to exit? 😥',
-                        icon: 'warning',
-                        showCancelButton: true,
-                        confirmButtonColor: '#3085d6',
-                        cancelButtonColor: '#d33',
-                        confirmButtonText: 'Yes, exit!',
-                        cancelButtonText: 'Cancel'
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            // User confirmed, allow navigation
-                            // Add any cleanup or save operations here if needed
-                        } else {
-                            // User canceled, prevent navigation
-                            e.preventDefault();
-                        }
-                    });
-                });
-        
-                // Advanced error handling for unexpected errors
-                window.addEventListener('error', function (event) {
-                    console.error('Unexpected error:', event.error);
-                    Swal.fire({
-                        title: 'Oops...',
-                        text: 'An unexpected error occurred. Please try again.',
-                        icon: 'error'
-                    });
-                });
-        
-                // Advanced error handling for promise rejections
-                window.addEventListener('unhandledrejection', function (event) {
-                    console.error('Unhandled promise rejection:', event.reason);
-                    Swal.fire({
-                        title: 'Oops...',
-                        text: 'An unhandled promise rejection occurred. Please try again.',
-                        icon: 'error'
-                    });
-                });
-            });
-        </script>
+              document.addEventListener("DOMContentLoaded", function () {
+                  // Add event listener to window beforeunload event
+                  window.addEventListener("beforeunload", function (e) {
+                      // Display SweetAlert confirmation dialog
+                      Swal.fire({
+                          title: 'Confirmation',
+                          text: 'Are you sure you want to exit? 😥',
+                          icon: 'warning',
+                          showCancelButton: true,
+                          confirmButtonColor: '#3085d6',
+                          cancelButtonColor: '#d33',
+                          confirmButtonText: 'Yes, exit!',
+                          cancelButtonText: 'Cancel'
+                      }).then((result) => {
+                          if (result.isConfirmed) {
+                              // User confirmed, allow navigation
+                              // Add any cleanup or save operations here if needed
+                          } else {
+                              // User canceled, prevent navigation
+                              e.preventDefault();
+                          }
+                      });
+                  });
+          
+                  // Advanced error handling for unexpected errors
+                  window.addEventListener('error', function (event) {
+                      console.error('Unexpected error:', event.error);
+                      Swal.fire({
+                          title: 'Oops...',
+                          text: 'An unexpected error occurred. Please try again.',
+                          icon: 'error'
+                      });
+                  });
+          
+                  // Advanced error handling for promise rejections
+                  window.addEventListener('unhandledrejection', function (event) {
+                      console.error('Unhandled promise rejection:', event.reason);
+                      Swal.fire({
+                          title: 'Oops...',
+                          text: 'An unhandled promise rejection occurred. Please try again.',
+                          icon: 'error'
+                      });
+                  });
+              });
+          </script>          
           <script>
             // Use setTimeout to delay the execution of Toastify
             setTimeout(function() {
