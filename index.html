@@ -1,380 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mentorship By Dilawar | Premier Program for Success and Growth</title>
-        <link rel="shortcut icon" href="dilawarmentorship.jpeg" type="image/x-icon" />
-        <meta name="description" content="The top-rated mentorship program for students, job holders, freelancers, and developers to become financially strong and independent." />
-        <!-- Add this link to include the Jost font -->
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        <!-- Bootstrap CSS Link -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <!-- Font Awesome CSS Link -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
-        <link rel="stylesheet" href="style.css" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-019FF0PCS3"></script>
-        <!-- Start of Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11378236426"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "AW-11378236426");
-        </script>
-        <!-- Ended of Google tag (gtag.js) -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentorship By Dilawar | Premier Program for Success and Growth</title>
+  <link rel="shortcut icon" href="dilawarmentorship.jpeg" type="image/x-icon">
+  <meta name="description" content="The top-rated mentorship program for students, job holders, freelancers, and developers to become financially strong and independent.">
+    <!-- Add this link to include the Jost font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS Link -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+ <link rel="stylesheet" href="style.css">
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-019FF0PCS3"></script>
+<!-- Start of Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11378236426"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11378236426'); </script>
+<!-- Ended of Google tag (gtag.js) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-            gtag("config", "G-019FF0PCS3");
-        </script>
-        <style>
-            .fa-3x {
-                font-size: 3em;
-                color: #0d6efd;
-            }
-            /* #text-size{
+  gtag('config', 'G-019FF0PCS3');
+</script>
+  <style>
+    .fa-3x {
+    font-size: 3em;
+    color: #0d6efd;
+}
+/* #text-size{
   font-size: xx-large;
 } */
-            *,
-            *::before,
-            *::after {
-                box-sizing: border-box;
-            }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-            @keyframes rotate {
-                100% {
-                    transform: rotate(1turn);
-                }
-            }
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
 
-            .rainbow {
-                position: relative;
-                z-index: 0;
-                width: 220px;
-                height: 220px;
-                margin-bottom: 45px;
-                border-radius: 50%;
-                overflow: hidden;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+.rainbow {
+  position: relative;
+  z-index: 0;
+  width: 220px;
+  height: 220px;
+  margin-bottom: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-            /* Rainbow Animation */
-            .rainbow::before {
-                content: "";
-                position: absolute;
-                z-index: -2;
-                left: -50%;
-                top: -50%;
-                width: 200%;
-                height: 200%;
-                background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%);
-                background-repeat: no-repeat;
-                background-size: 80% 50%, 80% 50%;
-                background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-                animation: rotate 2s linear infinite;
-            }
+/* Rainbow Animation */
+.rainbow::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%);
+  background-repeat: no-repeat; 
+  background-size: 80% 50%, 80% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: rotate 2s linear infinite;
+}
 
-            /* Image */
-            .rainbow::after {
-                content: "";
-                position: absolute;
-                z-index: -1;
-                left: 6px;
-                top: 6px;
-                width: calc(100% - 12px);
-                height: calc(100% - 12px);
-                background-image: url("dilawarmentorship.jpeg");
-                background-size: cover;
-                border-radius: 50%;
-            }
-            .rating-icon {
-                color: #fbb300;
-                font-size: 24px;
-                /*       margin-right: 10px; */
-            }
+/* Image */
+.rainbow::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background-image: url("dilawarmentorship.jpeg");
+  background-size: cover;
+  border-radius: 50%;
+}
+    .rating-icon {
+      color: #fbb300; 
+      font-size: 24px; 
+/*       margin-right: 10px; */
+    }
 
-            th {
-                background-color: #007bff !important;
-                color: #fff !important;
-            }
-            th,
-            td {
-                text-align: center;
-            }
-            td {
-                background-color: #f8f9fa;
-            }
-            .total-cost {
-                font-weight: bold;
-                font-size: 18px;
-                background-color: #f1f1f1 !important;
-            }
-            .total-discount {
-                font-weight: bold;
-                font-size: 18px;
-                background: #00c56a;
-                color: white;
-                padding: 5px;
-                border-radius: 10px;
-            }
-            #progress-bar {
-                width: 0;
-                height: 5px;
-                background: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%);
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 1000;
-                transition: width 0.3s ease;
-            }
-            .whatsapp-container {
-                display: none; /* Initially hide the button */
-                position: fixed;
-                bottom: 28px;
-                right: 10px;
-                animation: float 3s infinite ease-in-out;
-                z-index: 9999;
-            }
+    th {
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+th, td {
+    text-align: center;
+}
+td {
+    background-color: #f8f9fa;
+}
+.total-cost {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #f1f1f1 !important;
+}
+.total-discount {
+  font-weight: bold;
+  font-size: 18px;
+  background: #00c56a;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+   #progress-bar {
+      width: 0;
+      height: 5px;
+      background: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      transition: width 0.3s ease;
+    }
+   .whatsapp-container {
+            display: none; /* Initially hide the button */
+            position: fixed;
+            bottom: 28px;
+            right: 10px;
+            animation: float 3s infinite ease-in-out;
+            z-index: 9999;
+        }
 
-            .whatsapp-container img {
-                width: 66px;
-                height: auto;
-            }
+        .whatsapp-container img {
+            width: 66px;
+            height: auto;
+        }
 
-            @keyframes float {
-                0%,
-                100% {
-                    transform: translateY(0);
-                }
-                50% {
-                    transform: translateY(-20px);
-                }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
             }
-        </style>
-    </head>
-    <body>
-        <nav
-            class="navbar navbar-expand-lg navbar-light"
-            style="
-                border: 2px solid white;
-                z-index: 999999;
-                background-color: rgba(255, 255, 255, 0.1);
-                min-height: 0px;
-                min-width: 0px;
-                max-height: none;
-                max-width: none;
-                overflow: hidden;
-                -webkit-backdrop-filter: blur(20px);
-                backdrop-filter: blur(20px);
-                -webkit-filter: none;
-                filter: none;
-                -webkit-transform-origin: 50% 50%;
-                -ms-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
-                -webkit-transform: translate(0px, 0px);
-                -ms-transform: translate(0px, 0px);
-                transform: translate(0px, 0px);
-                opacity: 1;
-                visibility: visible;
-            "
-        >
-            <a class="navbar-brand" href="https://mentorshipbydilawar.online" style="color: white; padding: 5px; background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%); border-radius: 20px;">
-                Mentorship By Dilawar
-                <!-- <img src="your-logo.png" alt="Logo" class="navbar-logo"> -->
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://dilawar.vercel.app">Mentor Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://marketoze.agency">Company Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#outline">Mentorship Outline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#fee-structure">Fee Structure</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--   Added Preloader -->
-        <div id="progress-bar"></div>
-        <script>
-            document.addEventListener("scroll", function () {
-                const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-                const scrollProgress = (scrollTop / scrollHeight) * 100;
-                document.getElementById("progress-bar").style.width = scrollProgress + "%";
-            });
-        </script>
-        <!--   Ended Preloader -->
-        <div class="container mt-5">
-            <div class="row justify-content-center">
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+  </style>
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light" style="border: 2px solid white; z-index: 999999;
+  background-color: rgba(255, 255, 255, 0.1);
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+  visibility: visible;">
+        <a class="navbar-brand" href="https://mentorshipbydilawar.online" style="color: white;
+        padding: 5px;
+        background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%);
+        border-radius: 20px;">Mentorship By Dilawar
+            <!-- <img src="your-logo.png" alt="Logo" class="navbar-logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://dilawar.vercel.app">Mentor Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://marketoze.agency">Company Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#outline">Mentorship Outline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fee-structure">Fee Structure</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+<!--   Added Preloader -->
+<div id="progress-bar"></div>
+<script>
+  document.addEventListener("scroll", function() {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollProgress = (scrollTop / scrollHeight) * 100;
+    document.getElementById("progress-bar").style.width = scrollProgress + "%";
+  });
+</script>
+<!--   Ended Preloader -->
+      <div class="container mt-5">
+        <div class="row justify-content-center">
                 <div class="card course-card" style="padding: 8px;">
-                    <div class="container" style="margin-top: 75px;">
-                        <center>
-                            <div class="rainbow">
-                                <!-- Content goes here -->
-                            </div>
-                        </center>
-                        <h1 class="text-center" style="margin-top: -38px; font-size: 24px; font-weight: bold;">
-                            Mentorship By Dilawar - Your Premier and Trusted Learning Partner. <i class="fa-solid fa-medal"></i>
-                            <!-- <span style="vertical-align: middle; margin-left: 2px;">
+                  <div class="container" style="margin-top: 75px;">
+<center><div class="rainbow">
+  <!-- Content goes here -->
+</div>
+</center>
+                    <h1 class="text-center" style="margin-top: -38px; font-size: 24px; font-weight: bold;">
+                      Mentorship By Dilawar - Your Premier and Trusted Learning Partner. <i class="fa-solid fa-medal"></i>
+  <!-- <span style="vertical-align: middle; margin-left: 2px;">
     <img src="twitter-verified-seeklogo.com.svg" width="32px" alt="Verified">
   </span> -->
-                        </h1>
-                        <img src="mentoring.webp" alt="Mentorship By Dilawar" style="width: 100%; margin-bottom: 15px;" />
-                        <p style="text-align: justify;">
-                            Invest in your career goals. Learn the most in-demand and highly paid skills of the future with Mentorship By Dilawar practically and strategically in one package. Pay less and learn more from the comfort of your
-                            home. Join the most exclusive and results-oriented mentorship program now for the best learning experience. To know about the mentor, Please visit
-                            <strong><a href="https://dilawar.vercel.app">Mentor Portfolio</a></strong>.
-                        </p>
-                        <p style="margin: -5px 0px 10px -5px;">
-                            <span class="fas fa-check-circle text-success"></span> <b>Requirements</b> <br />
-                            <span class="fas fa-laptop"></span> Laptop or PC <br />
-                            <span class="fas fa-wifi"></span> Stable Internet Connection <br />
-                            <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #fbb300;"></i> <b>Happy Students:</b> 4.8/5 ⭐️ <small class="text-muted">(492 students)</small><br />
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 640 512">
-                                <style>
-                                    svg {
-                                        fill: #212529;
-                                    }
-                                </style>
-                                <path
-                                    d="M192 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8 352V352h16v96H184zm-64 0H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H152h80H608c17.7 0 32-14.3 32-32s-14.3-32-32-32H264V256.9l28.6 47.5c9.1 15.1 28.8 20 43.9 10.9s20-28.8 10.9-43.9l-58.3-97c-17.4-28.9-48.6-46.6-82.3-46.6H177.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L120 256.9V448zM598.6 121.4l-80-80c-12.5-12.5-32.8-12.5-45.3 0l-80 80c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L464 141.3 464 384c0 17.7 14.3 32 32 32s32-14.3 32-32V141.3l25.4 25.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"
-                                />
-                            </svg>
-                            <b>Success Rate:</b> 96.43% <br />
-                            <span class="fas fa-users"></span> <b>Registered Students:</b> 520 <br />
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 576 512">
-                                <style>
-                                    svg {
-                                        fill: #212529;
-                                    }
-                                </style>
-                                <path
-                                    d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l44.9 74.7c-16.1 17.6-28.6 38.5-36.6 61.5c-1.9-1.8-3.5-3.9-4.9-6.3L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152zM432 224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm0 240a24 24 0 1 0 0-48 24 24 0 1 0 0 48zM368 321.6V328c0 8.8 7.2 16 16 16s16-7.2 16-16v-6.4c0-5.3 4.3-9.6 9.6-9.6h40.5c7.7 0 13.9 6.2 13.9 13.9c0 5.2-2.9 9.9-7.4 12.3l-32 16.8c-5.3 2.8-8.6 8.2-8.6 14.2V384c0 8.8 7.2 16 16 16s16-7.2 16-16v-5.1l23.5-12.3c15.1-7.9 24.5-23.6 24.5-40.6c0-25.4-20.6-45.9-45.9-45.9H409.6c-23 0-41.6 18.6-41.6 41.6z"
-                                />
-                            </svg>
-                            <b>Who can join:</b> Not everyone can join. We prefer matric and intermediate students or above, or individuals seeking to change their career or job. Those who want to improve their skills are also welcome to
-                            join. <br />
-                            <i class="fa-solid fa-triangle-exclamation"></i> <b style="background-color: #fbb300; padding: 2px; border-radius: 10px;">Important Note:</b> Make sure initially ap ny mehnat karni hogi and daily ka kaam daily
-                            karna hoga to join this mentorship. Agar ap starting main mehnat nhi kar sakty to phir ap join na karien!
-                        </p>
-
-                        <div>
+</h1>
+                      <img src="mentoring.webp" alt="Mentorship By Dilawar" style="
+    width: 100%;
+    margin-bottom: 15px;
+">
+                    <p style="text-align: justify;">Invest in your career goals. Learn the most in-demand and highly paid skills of the future with Mentorship By Dilawar practically and strategically in one package. Pay less and learn more from the comfort of your home. Join the most exclusive and results-oriented mentorship program now for the best learning experience. To know about the mentor, Please visit <strong><a href="https://dilawar.vercel.app">Mentor Portfolio</a></strong>.</p>
+                      <p style="margin: -5px 0px 10px -5px;">
+                     <span class="fas fa-check-circle text-success"></span> <b>Requirements</b> <br>
+    <span class="fas fa-laptop"></span> Laptop or PC <br>
+    <span class="fas fa-wifi"></span> Stable Internet Connection <br>              
+    <i class="fa-regular fa-face-laugh-beam fa-xl" style="color: #fbb300;"></i> <b>Happy Students:</b> 4.8/5 ⭐️ <small class="text-muted">(492 students)</small><br>
+   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 640 512"><style>svg{fill:#212529}</style><path d="M192 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8 352V352h16v96H184zm-64 0H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H152h80H608c17.7 0 32-14.3 32-32s-14.3-32-32-32H264V256.9l28.6 47.5c9.1 15.1 28.8 20 43.9 10.9s20-28.8 10.9-43.9l-58.3-97c-17.4-28.9-48.6-46.6-82.3-46.6H177.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L120 256.9V448zM598.6 121.4l-80-80c-12.5-12.5-32.8-12.5-45.3 0l-80 80c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L464 141.3 464 384c0 17.7 14.3 32 32 32s32-14.3 32-32V141.3l25.4 25.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/></svg><b>Success Rate:</b> 96.43% <br>
+   <span class="fas fa-users"></span> <b>Registered Students:</b> 520 <br>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 576 512"><style>svg{fill:#212529}</style><path d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l44.9 74.7c-16.1 17.6-28.6 38.5-36.6 61.5c-1.9-1.8-3.5-3.9-4.9-6.3L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152zM432 224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm0 240a24 24 0 1 0 0-48 24 24 0 1 0 0 48zM368 321.6V328c0 8.8 7.2 16 16 16s16-7.2 16-16v-6.4c0-5.3 4.3-9.6 9.6-9.6h40.5c7.7 0 13.9 6.2 13.9 13.9c0 5.2-2.9 9.9-7.4 12.3l-32 16.8c-5.3 2.8-8.6 8.2-8.6 14.2V384c0 8.8 7.2 16 16 16s16-7.2 16-16v-5.1l23.5-12.3c15.1-7.9 24.5-23.6 24.5-40.6c0-25.4-20.6-45.9-45.9-45.9H409.6c-23 0-41.6 18.6-41.6 41.6z"/></svg><b>Who can join:</b> Not everyone can join. We prefer matric and intermediate students or above, or individuals seeking to change their career or job. Those who want to improve their skills are also welcome to join. <br>
+   <i class="fa-solid fa-triangle-exclamation"></i> <b style="background-color: #fbb300; padding: 2px; border-radius: 10px;">Important Note:</b> Make sure initially ap ny mehnat karni hogi and daily ka kaam daily karna hoga to join this mentorship. Agar ap starting main mehnat nhi kar sakty to phir ap join na karien!
+</p>
+ 
+                    <div>
                             <h1>
-                                <span class="course-icon"><i class="fa-solid fa-user-graduate" style="color: #0d6efd; font-size: 30px;"></i></span>Learning Programs
-                            </h1>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Master Web Programming
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                E-Commerce Expert
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                WordPress Development
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Blogging with AdSense Approval
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Affiliate Marketing (Including Amazon Affiliate)
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Search Engine Optimization (SEO) Mastery
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Social Media Marketing (SMM) Expert
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Guest Posting and Backlinking
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                ChatGPT Prompt Engineering
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Content Writing with ChatGPT and Google Bard
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Graphics Designing with Canva
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Freelancing - Be Your Own Boss
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Domain Flipping OR Digital Marketing (Optional on one-time payment of fee)
-                            </div>
-                            <div class="course">
-                                <span class="course-icon"><i class="fas fa-check"></i></span>
-                                Communication Skills
-                            </div>
+                              <span class="course-icon"><i class="fa-solid fa-user-graduate" style="color: #0d6efd; font-size: 30px;"></i></span>Learning Programs
+                          </h1>
+                          <div class="course">
+                              <span class="course-icon"><i class="fas fa-check"></i></span>
+                             Master Web Programming
+                          </div>
+                          <div class="course">
+                            <span class="course-icon"><i class="fas fa-check"></i></span>
+                           E-Commerce Expert
                         </div>
+                          <div class="course">
+                              <span class="course-icon"><i class="fas fa-check"></i></span>
+                            WordPress Development
+                          </div>
+                          <div class="course">
+                              <span class="course-icon"><i class="fas fa-check"></i></span>
+                            Blogging with AdSense Approval
+                          </div>
+                          <div class="course">
+                              <span class="course-icon"><i class="fas fa-check"></i></span>
+                              Affiliate Marketing (Including Amazon Affiliate)
+                          </div>
+                          <div class="course">
+                              <span class="course-icon"><i class="fas fa-check"></i></span>
+                            Search Engine Optimization (SEO) Mastery
+                          </div>
+                          <div class="course">
+                              <span class="course-icon"><i class="fas fa-check"></i></span>
+                            Social Media Marketing (SMM) Expert
+                          </div>
+                          <div class="course">
+                            <span class="course-icon"><i class="fas fa-check"></i></span>
+                           Guest Posting and Backlinking
+                        </div>
+                        <div class="course">
+                          <span class="course-icon"><i class="fas fa-check"></i></span>
+                          ChatGPT Prompt Engineering
+                      </div>
+                      <div class="course">
+                        <span class="course-icon"><i class="fas fa-check"></i></span>
+                       Content Writing with ChatGPT and Google Bard
                     </div>
+                    <div class="course">
+                      <span class="course-icon"><i class="fas fa-check"></i></span>
+                       Graphics Designing with Canva
+                  </div>
+                  <div class="course">
+                    <span class="course-icon"><i class="fas fa-check"></i></span>
+                   Freelancing - Be Your Own Boss
+                </div>
+                  <div class="course">
+                    <span class="course-icon"><i class="fas fa-check"></i></span>
+                     Domain Flipping OR Digital Marketing (Optional on one-time payment of fee)
+                </div>
+                <div class="course">
+                  <span class="course-icon"><i class="fas fa-check"></i></span>
+                 Communication Skills
+              </div>
+                          </div>
+                        </div>
                     <div class="card-body">
+                      
                         <h1>
                             <span class="project-icon"><i class="fas fa-tasks" style="color: #0d6efd; font-size: 30px;"></i></span>Websites and Web Apps Developed by Mentor
                         </h1>
                         <div class="course">
-                            <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
-                            <a href="https://dilawar.vercel.app">dilawar.vercel.app</a>
-                        </div>
+                          <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
+                          <a href="https://dilawar.vercel.app">dilawar.vercel.app</a>
+                      </div>
+                      <div class="course">
+                          <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
+                          <a href="https://snapmp3.com">snapmp3.com</a>
+                      </div>
                         <div class="course">
-                            <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
-                            <a href="https://snapmp3.com">snapmp3.com</a>
-                        </div>
-                        <div class="course">
-                            <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
-                            <a href="https://lovecalcu.com">lovecalcu.com</a>
-                        </div>
-                        <div class="course">
-                            <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
-                            <a href="https://pubgfont.com">pubgfont.com</a>
-                        </div>
-                        <div class="course">
-                            <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
-                            <a href="https://aiovd.com/">aiovd.com</a>
-                        </div>
+                          <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
+                          <a href="https://lovecalcu.com">lovecalcu.com</a>
+                      </div>
+                      <div class="course">
+                        <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
+                        <a href="https://pubgfont.com">pubgfont.com</a>
+                    </div>
+                    <div class="course">
+                      <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
+                      <a href="https://aiovd.com/">aiovd.com</a>
+                  </div>
                         <div class="course">
                             <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
                             <a href="https://mentorshipbydilawar.online">mentorshipbydilawar.online</a>
                         </div>
                         <div class="course">
-                            <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
-                            <a href="https://dilawarworld.netlify.app/">dilawarworld.netlify.app</a>
-                        </div>
+                          <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
+                          <a href="https://dilawarworld.netlify.app/">dilawarworld.netlify.app</a>
+                      </div>
                         <div class="course">
                             <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
                             <a href="https://marketoze.agency">marketoze.agency</a>
@@ -386,326 +347,305 @@
                     </div>
                 </div>
             </div>
+    </div>
+    <!-- Project -->
+    <div class="container mt-6">
+      <div class="row justify-content-center">
+              <div class="card course-card">
+                <div class="card-body">
+            
+                  <h1 style="font-size: 24px;">
+                      <i class="fa-brands fa-space-awesome" style="color: #0d6efd; font-size: 30px;"></i>
+                      Previous Batch Students Projects
+                  </h1>
+                  <div class="course">
+                      <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
+                      <a href="https://mentorship-by-dilawar.github.io/project-1/">mentorshipbydilawar/project-1</a>
+                  </div>
+                  <div class="course">
+                      <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
+                      <a href="https://mentorship-by-dilawar.github.io/project-2/">mentorshipbydilawar/project-2</a>
+                  </div>
+                  <div class="course">
+                      <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
+                      <a href="https://mentorship-by-dilawar.github.io/project-3">mentorshipbydilawar/project-3</a>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+  <div class="container" style="margin-top: 30px;">
+    <h1 class="text-center mb-4" style="font-size: 24px;"> <i class="fa-solid fa-handshake"></i> Why Choose Mentorship By Dilawar as your Trusted Learning Partner?</h1>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fas fa-hands fa-3x"></i>
+          <p>Hands on experience</p>
         </div>
-        <!-- Project -->
-        <div class="container mt-6">
-            <div class="row justify-content-center">
-                <div class="card course-card">
-                    <div class="card-body">
-                        <h1 style="font-size: 24px;">
-                            <i class="fa-brands fa-space-awesome" style="color: #0d6efd; font-size: 30px;"></i>
-                            Previous Batch Students Projects
-                        </h1>
-                        <div class="course">
-                            <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
-                            <a href="https://mentorship-by-dilawar.github.io/project-1/">mentorshipbydilawar/project-1</a>
-                        </div>
-                        <div class="course">
-                            <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
-                            <a href="https://mentorship-by-dilawar.github.io/project-2/">mentorshipbydilawar/project-2</a>
-                        </div>
-                        <div class="course">
-                            <span class="website-icon"><i class="fas fa-external-link-alt"></i></span>
-                            <a href="https://mentorship-by-dilawar.github.io/project-3">mentorshipbydilawar/project-3</a>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fas fa-gem fa-3x"></i>
+          <p>Only valuable content</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+         <i class="fa-solid fa-hand-holding-dollar" style="color: #0d6efd; font-size:3rem;"></i>
+          <p>3-days money-back guarantee</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fas fa-server fa-3x"></i>
+          <p>One year FREE dedicated web hosting and SAVE up to Rs. 15,000</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fas fa-house-signal fa-3x"></i>
+          <p>LIVE Online regular classes - Learn from the comfort of your home</p> 
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fab fa-whatsapp fa-3x"></i>
+          <p>WhatsApp support by mentor even on LIVE video call</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fas fa-user-tie fa-3x"></i>
+          <p>Self-employment and a 100% job guarantee for top-qualified students.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fas fa-comments fa-3x"></i>
+          <p>WhatsApp group and chat support where you can ask questions and receive instant answers</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fas fa-video fa-3x"></i>
+          <p>Recorded lectures (lifetime access) if you missed live class due to some reasons like traveling, illness e.t.c...</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fas fa-lock fa-3x"></i>
+          <p>Lifetime FREE SSL (Unlimited websites)</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fas fa-calendar-day fa-3x"></i>
+          <p>Daily updated and exciting content</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="feature">
+          <i class="fa-solid fa-shapes fa-2xl" style="color: #0d6efd;font-size: 3em;"></i>
+          <p>Project based 100% practical training</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- What you will learn -->
+
+  <div class="container mt-5" id="outline">
+   
+    <div class="row justify-content-center">
+      
+            <div class="card course-card">
+              <h1 class="heading-5">
+                <i class="fa-solid fa-laptop-code" style="color: #0d6efd; font-size: 30px;"></i>
+                In Mentorship By Dilawar, You'll Learn:
+            </h1>
+            <div data-aos="fade-right">
+                <div class="course">
+                  <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                 <b class="modules">Web Programming 01:</b> How to create <b>professional websites and high end web applications</b> that are compatible with all web browsers and devices (android, iOS, and desktop). Learn to create <a href="https://en.wikipedia.org/wiki/Browser_extension"> browsers extensions</a> and much more...
+              </div>
             </div>
-            <div class="container" style="margin-top: 30px;">
-                <h1 class="text-center mb-4" style="font-size: 24px;"><i class="fa-solid fa-handshake"></i> Why Choose Mentorship By Dilawar as your Trusted Learning Partner?</h1>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fas fa-hands fa-3x"></i>
-                            <p>Hands on experience</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fas fa-gem fa-3x"></i>
-                            <p>Only valuable content</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fa-solid fa-hand-holding-dollar" style="color: #0d6efd; font-size: 3rem;"></i>
-                            <p>3-days money-back guarantee</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fas fa-server fa-3x"></i>
-                            <p>One year FREE dedicated web hosting and SAVE up to Rs. 15,000</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fas fa-house-signal fa-3x"></i>
-                            <p>LIVE Online regular classes - Learn from the comfort of your home</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fab fa-whatsapp fa-3x"></i>
-                            <p>WhatsApp support by mentor even on LIVE video call</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fas fa-user-tie fa-3x"></i>
-                            <p>Self-employment and a 100% job guarantee for top-qualified students.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fas fa-comments fa-3x"></i>
-                            <p>WhatsApp group and chat support where you can ask questions and receive instant answers</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fas fa-video fa-3x"></i>
-                            <p>Recorded lectures (lifetime access) if you missed live class due to some reasons like traveling, illness e.t.c...</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fas fa-lock fa-3x"></i>
-                            <p>Lifetime FREE SSL (Unlimited websites)</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fas fa-calendar-day fa-3x"></i>
-                            <p>Daily updated and exciting content</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="feature">
-                            <i class="fa-solid fa-shapes fa-2xl" style="color: #0d6efd; font-size: 3em;"></i>
-                            <p>Project based 100% practical training</p>
-                        </div>
-                    </div>
-                </div>
+            <div data-aos="fade-left">
+              <div class="course">
+                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                <b class="modules">E-Commerce 02:</b> How to create <b>modern E-commerce stores</b> for selling products and dropshipping (local & international) <mark><span style="border: 2px dotted #ff2020;">NO subscription charges or selling fees</span></mark> like <a href="https://www.shopify.com/pricing">Shopify</a> ($1 for first 3 months and then $25 per month), <a href="https://sell.amazon.com/pricing">Amazon</a> ($0.99 per order), <a href="https://www.ebay.com/">eBay</a> ($0.30 per order) and other selling platforms. Learn to find winning proudcts for maximum profit.
             </div>
-            <!-- What you will learn -->
-
-            <div class="container mt-5" id="outline">
-                <div class="row justify-content-center">
-                    <div class="card course-card">
-                        <h1 class="heading-5">
-                            <i class="fa-solid fa-laptop-code" style="color: #0d6efd; font-size: 30px;"></i>
-                            In Mentorship By Dilawar, You'll Learn:
-                        </h1>
-                        <div data-aos="fade-right">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Web Programming 01:</b> How to create <b>professional websites and high end web applications</b> that are compatible with all web browsers and devices (android, iOS, and desktop). Learn to
-                                create <a href="https://en.wikipedia.org/wiki/Browser_extension"> browsers extensions</a> and much more...
-                            </div>
-                        </div>
-                        <div data-aos="fade-left">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">E-Commerce 02:</b> How to create <b>modern E-commerce stores</b> for selling products and dropshipping (local & international)
-                                <mark><span style="border: 2px dotted #ff2020;">NO subscription charges or selling fees</span></mark> like <a href="https://www.shopify.com/pricing">Shopify</a> ($1 for first 3 months and then $25 per month),
-                                <a href="https://sell.amazon.com/pricing">Amazon</a> ($0.99 per order), <a href="https://www.ebay.com/">eBay</a> ($0.30 per order) and other selling platforms. Learn to find winning proudcts for maximum
-                                profit.
-                            </div>
-                        </div>
-                        <div data-aos="fade-right">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">WordPress Development 03:</b> How to <b>download and Install WordPress</b>. Setting up WordPress themes and plugins. WordPress full customization to build complete websites using WordPress.
-                            </div>
-                        </div>
-                        <div data-aos="fade-left">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Blogging 04:</b> How to <b>generate passive income through blogging</b> by displaying ads from <a href="https://adsense.google.com/start/">Google AdSense</a> and other multiple ad networks.
-                                It includes quick AdSense approval tricks, keyword research, niche research, AdSense arbitration, finding high CPC keywords and writing seo friendly blogs that rank on google and other search engines.
-                            </div>
-                        </div>
-                        <div data-aos="fade-right">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Affiliate Marketing 05:</b> What is <b>affiliate marketing</b>. How to make passive income through affiliate marketing. It includes finding of best affiliate companies or businesses that
-                                pays high affiliate commission.
-                            </div>
-                        </div>
-                        <div data-aos="fade-left">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Search Engine Optimization 06:</b> How to <b>rank websites and web apps organically</b> on search engines through Search Engine Optimization (SEO). It includes On-Page SEO, Off-Page SEO,
-                                Technical SEO, Local SEO and YouTube SEO.
-                            </div>
-                        </div>
-                        <div data-aos="fade-right">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Social Media Marketing 07:</b> How to make money from Google Ads, Facebook & Instagram Ads, TikTok Ads and Snapchat Ads. In this session, you'll learn how to run and optimize
-                                <b>social media ads</b> with minimum budget while achieving maximum results to sell your services or products globally by using Social Media Marketing (SMM). Learn the advanced social media marketing
-                                techniques and strategies.
-                            </div>
-                        </div>
-                        <div data-aos="fade-left">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Guest Posting 08:</b> How to get <b>high quality do-follow backlinks</b> with high domain and page authority (DA & PA) from other well-authoritied websites to increase users on your new
-                                site. This includes writing guest posts for other well-established and well-authoritied sites to obtain quality backlinks for your new websites.
-                            </div>
-                        </div>
-                        <div data-aos="fade-right">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Prompt Engineering 09:</b> What is <b>ChatGPT Prompt Engineering</b>. How to give better commands to ChatGPT for accurate and improved results. It involves cracking of ChatGPT limitations
-                                to get maximum outputs from chatgpt. Learn to use artificial intelligence (AI) in your daily tasks for more efficient and faster work.
-                            </div>
-                        </div>
-                        <div data-aos="fade-left">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Content Writing with AI 10:</b> How to <b>write SEO friendly content</b> using ChatGPT and Google Bard. How to use ChatGPT and Google Bard like an expert content writer.
-                            </div>
-                        </div>
-                        <div data-aos="fade-right">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Canva Graphics Designing 11:</b> What is <b>Canva?</b> How to use Canva for graphics designing. How to create visual appealing, stunning and attractive graphics with Canva. Learn to create
-                                social media posts, presentations, posters, videos, logos and much more with Canva.
-                            </div>
-                        </div>
-                        <div data-aos="fade-left">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Freelancing 12:</b> What is <b>Freelancing?</b> Learn how to create an account, sell on freelancing marketplaces (Fiverr, Upwork, People Per Hour, Guru.com and Freelancer.com etc). Learn
-                                how to boost your account and beat the competition in freelancing marketplaces to get more orders.
-                            </div>
-                        </div>
-                        <div data-aos="fade-right">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Domain Flipping 13:</b> What is <b>Domain Flipping?</b> How to find and buy low-cost domain names, and then resell them for a higher price. The goal is to identify domain names with high
-                                potential value and sell them to buyers who need them for more than their original price.
-                            </div>
-                        </div>
-                        <span class="choice">OR</span>
-                        <div data-aos="fade-left">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Digital Marketing 14:</b> What is <b>Digital Marketing?</b> How to promote and sell products or services using the internet and digital channels like websites, social media, email, and
-                                search engines to reach and engage with potential customers. Learn how to advertise and connect with people online to grow a business.
-                            </div>
-                        </div>
-                        <div data-aos="fade-right">
-                            <div class="course">
-                                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                <b class="modules">Communication Skills 15:</b> What are <b>Communication Skills?</b> How to improve Communication Skills. Learn how to communicate and deal with clients effectively. Learn to sell anything to
-                                anyone from anywhere.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br />
-                <div style="text-align: center; margin: -10px 0 10px 0;">
-                    <small class="text-muted">
-                        <b style="color: #ff2020;"> Attention Please:</b> This is just a roadmap for this mentorship. There is a lot of unique, valuable, and interesting content included in this mentorship. Artificial Intelligence (AI) is
-                        included in all modules.
-                    </small>
-                </div>
+          </div>
+          <div data-aos="fade-right">
+              <div class="course">
+                  <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                  <b class="modules">WordPress Development 03:</b> How to <b>download and Install WordPress</b>. Setting up WordPress themes and plugins. WordPress full customization to build complete websites using WordPress.
+              </div>
             </div>
+            <div data-aos="fade-left">
+              <div class="course">
+                  <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                  <b class="modules">Blogging 04:</b> How to <b>generate passive income through blogging</b> by displaying ads from <a href="https://adsense.google.com/start/">Google AdSense</a> and other multiple ad networks. It includes quick AdSense approval tricks, keyword research, niche research, AdSense arbitration, finding high CPC keywords and writing seo friendly blogs that rank on google and other search engines.
+              </div>
+            </div>
+            <div data-aos="fade-right">
+              <div class="course">
+                  <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                  <b class="modules">Affiliate Marketing 05:</b> What is <b>affiliate marketing</b>. How to make passive income through affiliate marketing. It includes finding of best affiliate companies or businesses that pays high affiliate commission.
+              </div>
+            </div>
+            <div data-aos="fade-left">
+              <div class="course">
+                  <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                  <b class="modules">Search Engine Optimization 06:</b> How to <b>rank websites and web apps organically</b> on search engines through Search Engine Optimization (SEO). It includes On-Page SEO, Off-Page SEO, Technical SEO, Local SEO and YouTube SEO.
+              </div>
+            </div>
+            <div data-aos="fade-right">
+              <div class="course">
+                  <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                  <b class="modules">Social Media Marketing 07:</b> How to make money from Google Ads, Facebook & Instagram Ads, TikTok Ads and Snapchat Ads. In this session, you'll learn how to run and optimize <b>social media ads</b> with minimum budget while achieving maximum results to sell your services or products globally by using Social Media Marketing (SMM). Learn the advanced social media marketing techniques and strategies.
+              </div>
+            </div>
+            <div data-aos="fade-left">
+              <div class="course">
+                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                <b class="modules">Guest Posting 08:</b> How to get <b>high quality do-follow backlinks</b> with high domain and page authority (DA & PA) from other well-authoritied websites to increase users on your new site. This includes writing guest posts for other well-established and well-authoritied sites to obtain quality backlinks for your new websites.
+            </div>
+          </div>
+          <div data-aos="fade-right">
+            <div class="course">
+              <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+              <b class="modules">Prompt Engineering 09:</b> What is <b>ChatGPT Prompt Engineering</b>. How to give better commands to ChatGPT for accurate and improved results. It involves cracking of ChatGPT limitations to get maximum outputs from chatgpt. Learn to use artificial intelligence (AI) in your daily tasks for more efficient and faster work.
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <div class="course">
+            <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+            <b class="modules">Content Writing with AI 10:</b> How to <b>write SEO friendly content</b> using ChatGPT and Google Bard. How to use ChatGPT and Google Bard like an expert content writer.
+        </div>
+      </div>
+      <div data-aos="fade-right">
+        <div class="course">
+          <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+          <b class="modules">Canva Graphics Designing 11:</b> What is <b>Canva?</b> How to use Canva for graphics designing. How to create visual appealing, stunning and attractive graphics with Canva. Learn to create social media posts, presentations, posters, videos, logos and much more with Canva.
+      </div>
+    </div>
+    <div data-aos="fade-left">
+        <div class="course">
+          <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+          <b class="modules">Freelancing 12:</b> What is <b>Freelancing?</b> Learn how to create an account, sell on freelancing marketplaces (Fiverr, Upwork, People Per Hour, Guru.com and Freelancer.com etc). Learn how to boost your account and beat the competition in freelancing marketplaces to get more orders.
+      </div>
+    </div>
+    <div data-aos="fade-right">
+      <div class="course">
+        <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+        <b class="modules">Domain Flipping 13:</b> What is <b>Domain Flipping?</b> How to find and buy low-cost domain names, and then resell them for a higher price. The goal is to identify domain names with high potential value and sell them to buyers who need them for more than their original price.
+    </div>
+  </div>
+    <span class="choice">OR</span>
+    <div data-aos="fade-left">
+     <div class="course">
+      <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+      <b class="modules">Digital Marketing 14:</b> What is <b>Digital Marketing?</b> How to promote and sell products or services using the internet and digital channels like websites, social media, email, and search engines to reach and engage with potential customers. Learn how to advertise and connect with people online to grow a business.
+  </div>
+</div>
+<div data-aos="fade-right">
+  <div class="course">
+    <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+    <b class="modules">Communication Skills 15:</b> What are <b>Communication Skills?</b> How to improve Communication Skills. Learn how to communicate and deal with clients effectively. Learn to sell anything to anyone from anywhere.
+</div>
+</div>
+                  </div>
+                </div>
+                <br>
+              <div style="text-align: center; margin: -10px 0 10px 0;">
+                <small class="text-muted"><b style="color: #ff2020;"> Attention Please:</b> This is just a roadmap for this mentorship. There is a lot of unique, valuable, and interesting content included in this mentorship. Artificial Intelligence (AI) is included in all modules.</small>
+                </div>
+              </div>
 
-            <!-- Added students reviews -->
-            <h1 class="text-center mt-4 mb-4">Recent AdSense Approvals and Students Reviews - Click To Preview <i class="fa-solid fa-eye"></i></h1>
+                <!-- Added students reviews -->
+<h1 class="text-center mt-4 mb-4">Recent AdSense Approvals and Students Reviews - Click To Preview <i class="fa-solid fa-eye"></i></h1>
 
-            <!-- <div class="container"> -->
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="feature">
-                        <div class="card">
-                            <a href="web-stats-image.jpeg" data-fancybox="gallery" data-caption="AdSense Approvals and Website Stats">
-                                <img src="web-stats-thumbnail.jpeg" class="card-img-top" alt="AdSense Approvals and Website Stats" />
-                            </a>
-                        </div>
-                        <!-- <div class="card-body">
+<!-- <div class="container"> -->
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="feature">
+      <div class="card">
+        
+        <a href="web-stats-image.jpeg" data-fancybox="gallery" data-caption="AdSense Approvals and Website Stats">
+          <img src="web-stats-thumbnail.jpeg" class="card-img-top" alt="AdSense Approvals and Website Stats">
+        </a>
+      </div>
+        <!-- <div class="card-body">
           <h5 class="card-title">Student Name</h5>
           <p class="card-text">Review text from Student 1.</p>
         </div> -->
-                    </div>
-                </div>
-                <!-- Repeat the above code for other students' reviews -->
-                <div class="col-md-4 mb-4">
-                    <div class="feature">
-                        <div class="card">
-                            <a href="student-2-full.jpeg" data-fancybox="gallery" data-caption="Student 2">
-                                <img src="student-2-display.jpeg" class="card-img-top" alt="Student 2" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="feature">
-                        <div class="card">
-                            <a href="student-3-full.jpeg" data-fancybox="gallery" data-caption="Student 3">
-                                <img src="student-3-display.jpeg" class="card-img-top" alt="Student 3" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+    </div>
+    <!-- Repeat the above code for other students' reviews -->
+    <div class="col-md-4 mb-4">
+      <div class="feature">
+      <div class="card">
+        <a href="student-2-full.jpeg" data-fancybox="gallery" data-caption="Student 2">
+          <img src="student-2-display.jpeg" class="card-img-top" alt="Student 2">
+        </a>
+       
+      </div>
+    </div>
+    </div>
+     <div class="col-md-4 mb-4">
+      <div class="feature">
+      <div class="card">
+        <a href="student-3-full.jpeg" data-fancybox="gallery" data-caption="Student 3">
+          <img src="student-3-display.jpeg" class="card-img-top" alt="Student 3">
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+ </div>
 
-        <!-- Ended students reviews -->
-        <!-- Sources of income -->
 
-        <div class="container mt-6">
-            <div class="card course-card mb-4">
-                <h2>
-                    <i class="fa-solid fa-sack-dollar" style="color: #0d6efd; font-size: 30px;"></i>
-                    Sources Of Income You Can Make After Joining Mentorship By Dilawar
-                </h2>
-                <div class="card">
-                    <!-- <iframe width="100%" height="245px" src="https://drive.google.com/file/d/1yY3Af-jDODaSdkXzLa2bO58Os8mI4BHe/preview" title="Google Drive video player" frameborder="0" allowfullscreen></iframe> -->
-                    <img src="income-sources.jpeg" class="card-img-bottom" alt="income-sources" />
-                </div>
-                <div class="course">
-                    <p style="margin-top: 10px;">According to our case study, You can make following sources of income after joining <strong>Mentorship By Dilawar</strong>.</p>
-                    <ol>
-                        <li>Blogging (Make money by displaying <a href="https://adsense.google.com/start/">Google AdSense</a> and other multiple ad networks ads on your websites and web apps)</li>
-                        <li>Affiliate marketing (Earn commissions by promoting and selling physical or digital products on your sites).</li>
-                        <li>Guest posting (Offering sponsored guest posts on your websites and web apps)</li>
-                        <li>Creating commercial websites for businesses and startups</li>
-                        <li>
-                            Creating and selling digital products (Themes, Plugins and Scripts) on platforms like <a href="https://themeforest.net/">themeforest</a>, <a href="https://author.envato.com/">envato</a>,
-                            <a href="https://themewagon.com/theme-price/pro/">themewagon</a> and other such type of platforms
-                        </li>
-                        <li>Search engine optimization (SEO)</li>
-                        <li>Social media marketing (SMM)</li>
-                        <li>Flipping OR selling domain names</li>
-                        <li>Digital marketing company</li>
-                        <li>Content writing for businesses or other websites owners</li>
-                        <li>
-                            Freelancing - Be your own boss. (Marketplaces like <a href="https://www.fiverr.com/">Fiverr</a>, <a href="https://www.upwork.com/">Upwork</a>, <a href="https://www.peopleperhour.com/">PeoplePerHour</a>,
-                            <a href="https://www.guru.com/">Guru.com</a>, <a href="https://www.naukri.com/">Naukri</a>, and <a href="https://www.mustakbil.com/">Mustakbil</a> etc)
-                        </li>
-                        <li>Web hosting business/services</li>
-                        <li>Creating and selling your own mentorship by adding more value to your content.</li>
-                        <li>
-                            Creating multiple e-commerce stores to sell physical and digital products with <mark><span style="border: 2px dotted #ff2020;">NO subscription charges </span></mark> and selling fees like Shopify ($25 per month),
-                            eBay ($0.30 per order), Amazon (15% per order), and other selling platforms.
-                        </li>
-                        <li>Creating a YouTube channel and monetizing it through Google AdSense along with many more income sources discussed in your classes.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-        <!-- Blogs start -->
+<!-- Ended students reviews -->
+<!-- Sources of income -->
 
-        <!-- <h1 class="text-center mt-2 mb-4">My Recent Blogs</h1> -->
+<div class="container mt-6">
+  <div class="card course-card mb-4">
+    <h2>
+      <i class="fa-solid fa-sack-dollar" style="color: #0d6efd; font-size: 30px;"></i>
+       Sources Of Income You Can Make After Joining Mentorship By Dilawar
+  </h2>
+  <div class="card">
+    <!-- <iframe width="100%" height="245px" src="https://drive.google.com/file/d/1yY3Af-jDODaSdkXzLa2bO58Os8mI4BHe/preview" title="Google Drive video player" frameborder="0" allowfullscreen></iframe> -->
+    <img src="income-sources.jpeg" class="card-img-bottom" alt="income-sources">
+    </div>
+    <div class="course">
+       <p style="margin-top: 10px;">According to our case study, You can make following sources of income after joining <strong>Mentorship By Dilawar</strong>.</p>
+       <ol>
+        <li>Blogging (Make money by displaying <a href="https://adsense.google.com/start/">Google AdSense</a> and other multiple ad networks ads on your websites and web apps)</li>
+        <li>Affiliate marketing (Earn commissions by promoting and selling physical or digital products on your sites).</li>
+        <li>Guest posting (Offering sponsored guest posts on your websites and web apps)</li>
+        <li>Creating commercial websites for businesses and startups</li>
+        <li>Creating and selling digital products (Themes, Plugins and Scripts) on platforms like <a href="https://themeforest.net/">themeforest</a>, <a href="https://author.envato.com/">envato</a>, <a href="https://themewagon.com/theme-price/pro/">themewagon</a> and other such type of platforms</li>
+        <li>Search engine optimization (SEO)</li>
+        <li>Social media marketing (SMM)</li>
+        <li>Flipping OR selling domain names</li>
+        <li>Digital marketing company</li>
+        <li>Content writing for businesses or other websites owners</li>
+        <li>Freelancing - Be your own boss. (Marketplaces like <a href="https://www.fiverr.com/">Fiverr</a>, <a href="https://www.upwork.com/">Upwork</a>, <a href="https://www.peopleperhour.com/">PeoplePerHour</a>, <a href="https://www.guru.com/">Guru.com</a>, <a href="https://www.naukri.com/">Naukri</a>, and <a href="https://www.mustakbil.com/">Mustakbil</a> etc)</li>
+        <li>Web hosting business/services</li>
+        <li>Creating and selling your own mentorship by adding more value to your content.</li>
+        <li>Creating multiple e-commerce stores to sell physical and digital products with <mark><span style="border: 2px dotted #ff2020;">NO subscription charges </span></mark> and selling fees like Shopify ($25 per month), eBay ($0.30 per order), Amazon (15% per order), and other selling platforms.</li>
+        <li>Creating a YouTube channel and monetizing it through Google AdSense along with many more income sources discussed in your classes.</li>
+       </ol>
+    </div>
+  </div>
+</div>
+<!-- Blogs start -->
 
-        <!-- <div class="container"> -->
-        <!--   <div class="row" style="margin: 15px;">
+<!-- <h1 class="text-center mt-2 mb-4">My Recent Blogs</h1> -->
+
+<!-- <div class="container"> -->
+<!--   <div class="row" style="margin: 15px;">
     <div class="col-md-3 mb-4">
       <div class="feature">
       <div class="card">
@@ -720,9 +660,9 @@
         </div>
       </div>
     </div> -->
-        <!-- Repeat the above code for other students' reviews -->
-        <!-- Blog-2 -->
-        <!--     <div class="col-md-3 mb-4">
+    <!-- Repeat the above code for other students' reviews -->
+    <!-- Blog-2 -->
+<!--     <div class="col-md-3 mb-4">
       <div class="feature">
       <div class="card">
         
@@ -736,10 +676,10 @@
         </div>
       </div>
     </div> -->
-        <!-- Blog-2-end -->
+    <!-- Blog-2-end -->
 
-        <!-- Blog-3 -->
-        <!--      <div class="col-md-3 mb-4">
+     <!-- Blog-3 -->
+<!--      <div class="col-md-3 mb-4">
       <div class="feature">
       <div class="card">
         
@@ -753,10 +693,10 @@
         </div>
       </div>
     </div> -->
-        <!-- Blog-3-end -->
+    <!-- Blog-3-end -->
 
-        <!-- Blog-4 -->
-        <!--      <div class="col-md-3 mb-4">
+     <!-- Blog-4 -->
+<!--      <div class="col-md-3 mb-4">
       <div class="feature">
       <div class="card">
         
@@ -770,11 +710,11 @@
         </div>
       </div>
     </div> -->
-        <!-- Blog-4-end -->
-        <!-- </div> -->
+    <!-- Blog-4-end -->
+<!-- </div> -->
 
-        <!-- ADDED FREE DEMO SESSION -->
-        <!-- <center>
+<!-- ADDED FREE DEMO SESSION -->
+<!-- <center>
   <h1 class="text-center mt-4 mb-4">FREE Demo Video - Click To Watch (Old Video) <i class="fas fa-video"></i></h1>
   <div class="col-md-12 mb-4">
     <div class="feature" style="margin: 15px;">
@@ -784,13 +724,13 @@
     </div>
   </div>
 </center> -->
-        <!-- ENDED FREE DEMO SESSION -->
-        <!-- ADDED FAQ's -->
-        <div class="container mt-2" id="frequently-asked-questions">
-            <h1 class="text-center mb-4" id="text-size"><i class="fa-regular fa-circle-question"></i> Frequently Asked Questions (FAQ's)</h1>
-            <div class="accordion" id="faqAccordion">
-                <!-- FAQ Item 1 -->
-                <!-- <div class="accordion-item">
+<!-- ENDED FREE DEMO SESSION -->
+                <!-- ADDED FAQ's -->
+                    <div class="container mt-2" id="frequently-asked-questions">
+                      <h1 class="text-center mb-4" id="text-size"><i class="fa-regular fa-circle-question"></i> Frequently Asked Questions (FAQ's)</h1>
+                      <div class="accordion" id="faqAccordion">
+              <!-- FAQ Item 1 -->
+              <!-- <div class="accordion-item">
                 <h2 class="accordion-header" id="faq0">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0">
                       What is special about this mentorship program? Why do I choose it? Why is it important to everyone?
@@ -803,63 +743,63 @@
                 </div>
             </div> -->
 
-                <!-- FAQ Item 1 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq1">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                            Is it possible to learn all these courses in 2 months?
-                        </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Our program offers 48 days of practical training with a well-planned curriculum and strategic approach. With dedication, you can complete these courses in 2 months. With an experienced mentor, learning becomes
-                            interesting and easy.
-                        </div>
+                          <!-- FAQ Item 1 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="faq1">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                     Is it possible to learn all these courses in 2 months?
+                                  </button>
+                              </h2>
+                              <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                  <div class="accordion-body">
+                                    Our program offers 48 days of practical training with a well-planned curriculum and strategic approach. With dedication, you can complete these courses in 2 months. With an experienced mentor, learning becomes interesting and easy.
+                                  </div>
+                              </div>
+                          </div>
+              
+                          <!-- FAQ Item 2 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="faq2">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                      Will artificial intelligence (A.I) replace the skills offered in this mentorship program?
+                              </h2>
+                              <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                  <div class="accordion-body">
+                                   No, artificial intelligence (AI) will not replace the valuable skills offered in this mentorship program in future.
+                                  </div>
+                              </div>
+                          </div>
+              
+                          <!-- Add more FAQ items here -->
+              <!-- FAQ Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                        Who can join this mentorship program?
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Not everyone can join. People who want to achieve something big in their life can join. Preferably matric and intermediate students or above or those who want to change their career or job. People who want to improve their skills can also join.
                     </div>
                 </div>
+            </div>
 
-                <!-- FAQ Item 2 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq2">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                            Will artificial intelligence (A.I) replace the skills offered in this mentorship program?
+            <!-- FAQ Item 3 Endded -->
 
-                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    No, artificial intelligence (AI) will not replace the valuable skills offered in this mentorship program in future.
-                                </div>
-                            </div>
-
-                            <!-- Add more FAQ items here -->
-                            <!-- FAQ Item 3 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="faq3">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-                                        Who can join this mentorship program?
-
-                                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                            <div class="accordion-body">
-                                                Not everyone can join. People who want to achieve something big in their life can join. Preferably matric and intermediate students or above or those who want to change their career or job.
-                                                People who want to improve their skills can also join.
-                                            </div>
-                                        </div>
-
-                                        <!-- FAQ Item 3 Endded -->
-
-                                        <!-- FAQ Item 4 -->
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="faq4">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-                                                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                                        <div class="accordion-body">
-                                                            You can't join a single course because it's complete package with smart strategies. If you have developed your website or web apps, you need to rank them on search engines, and it
-                                                            can be done through SEO. If you want instant income or results, you'll need to learn social media marketing. If you want to work smart and include AI (Artificial Intelligence) in
-                                                            your work, then prompt engineering is very important to make your work easier and faster.
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- FAQ Item 5 -->
-                                                    <!-- <div class="accordion-item">
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq4">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                     Can I enroll in a single course?
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    You can't join a single course because it's complete package with smart strategies. If you have developed your website or web apps, you need to rank them on search engines, and it can be done through SEO. If you want instant income or results, you'll need to learn social media marketing. If you want to work smart and include AI (Artificial Intelligence) in your work, then prompt engineering is very important to make your work easier and faster.
+                  </div>
+              </div>
+          </div>
+<!-- FAQ Item 5 --> 
+          <!-- <div class="accordion-item">
             <h2 class="accordion-header" id="faq5">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
                     Why I have no presence on social media?
@@ -870,178 +810,149 @@
                 </div>
             </div>
         </div> -->
-                                                    <!-- FAQ Item 5 Endded -->
-                                                    <!-- FAQ Item 6 -->
-                                                    <div class="accordion-item">
-                                                        <h2 class="accordion-header" id="faq6">
-                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
-                                                                Why are the charges for my mentorship slightly higher?
+          <!-- FAQ Item 5 Endded -->  
+          <!-- FAQ Item 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq6">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+                  Why are the charges for my mentorship slightly higher?
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Everyone is charging based on their skillsets. If you learn from a professional, expert, and skilled mentor, their charges will obviously be slightly higher. I would recommend checking the mentor's practical work experience before joining, because if their practical experience is good, they will guide you well, and your own work experience will also be excellent. Otherwise, you can learn from unprofessional mentors for free.
+                </div>
+            </div>
+        </div>
+          <!-- FAQ Item 6 Endded -->      
+           <!-- FAQ Item 7 -->
+           <div class="accordion-item">
+            <h2 class="accordion-header" id="faq7">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+                    Will you offer a job after this mentorship program?
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, we will offer jobs to the top qualifying students after this mentorship program at our digital marketing company. Here's the link to our company <a href="https://marketoze.agency">Marketoze.</a> You can try taking a course from very expensive institutes, and if you still don't achieve anything, then you can consider joining us.
+                </div>
+            </div>
+        </div>
+          <!-- FAQ Item 7 Endded -->  
+          <!-- FAQ Item 8 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq8">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+                  Are classes physical or online?
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Classes will be live on Google Meet, offering a better experience than physical classes. We won't proceed until everything is clear to you. You can join from your mobile or laptop, saving you time and allowing flexibility from anywhere.
+                </div>
+            </div>
+        </div>
+          <!-- FAQ Item 8 Endded --> 
+                  </div>
+                  </div>
 
-                                                                <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                                                    <div class="accordion-body">
-                                                                        Everyone is charging based on their skillsets. If you learn from a professional, expert, and skilled mentor, their charges will obviously be slightly higher. I would
-                                                                        recommend checking the mentor's practical work experience before joining, because if their practical experience is good, they will guide you well, and your own work
-                                                                        experience will also be excellent. Otherwise, you can learn from unprofessional mentors for free.
-                                                                    </div>
-                                                                </div>
+<!--                 Ended FAQ's -->
+  <div class="container mt-6">
+  <div class="card course-card mb-4">
+    <h2 style="font-size: 22px;">
+      <i class="fa-solid fa-award"></i>
+       Certificate Of Completion Of Mentorship By Dilawar
+  </h2>
+  <div class="card">
+    <a href="certificate-of-completion.jpeg" data-fancybox="gallery" data-caption="Certification">
+      <img src="certificate-of-completion.jpeg" class="card-img-top" alt="Certification">
+    </a>
+  </div>
+  </div>
+</div>
+<!-- Registration Process -->
 
-                                                                <!-- FAQ Item 6 Endded -->
-                                                                <!-- FAQ Item 7 -->
-                                                                <div class="accordion-item">
-                                                                    <h2 class="accordion-header" id="faq7">
-                                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
-                                                                            Will you offer a job after this mentorship program?
+<div class="container mt-6">
+          <div class="card course-card">
+            <h2>
+              <i class="fa-solid fa-file-pen" style="color: #0d6efd; font-size: 30px;"></i>
+               Registration Process
+          </h2>
+              
+              <div class="course">
+                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+               <b class="modules">Step 01:</b>  Submit your complete details (Name, Father Name, CNIC and WhatsApp Number) along with the registration fee (Rs. 5000) just to filter out non-serious/interested persons. (3-days refund guarantee)
+            
+            </div>
+            <div class="course">
+                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                <b class="modules">Step 02:</b> Attend classes for the 3 days after your registration. If you decide not to continue with us within this period, you can request a refund of your registration fee. We'll refund your registration fee as per <a href="refund-policy.html">our policy</a> without any charges.
+            </div>
+            <div class="course">
+                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                <b class="modules">Step 03:</b> If you find this mentorship interesting and valuable, continue by submitting the remaining fee.
+            </div>
+            <p><strong>Important Note:</strong> When your registration is completed, We'll send you a receipt of your payment on your WhatsApp account.</p>
+          </div>
+      </div>
 
-                                                                            <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                                                                <div class="accordion-body">
-                                                                                    Yes, we will offer jobs to the top qualifying students after this mentorship program at our digital marketing company. Here's the link to our company
-                                                                                    <a href="https://marketoze.agency">Marketoze.</a> You can try taking a course from very expensive institutes, and if you still don't achieve anything, then
-                                                                                    you can consider joining us.
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <!-- FAQ Item 7 Endded -->
-                                                                            <!-- FAQ Item 8 -->
-                                                                            <div class="accordion-item">
-                                                                                <h2 class="accordion-header" id="faq8">
-                                                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
-                                                                                        Are classes physical or online?
-
-                                                                                        <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                                                                            <div class="accordion-body">
-                                                                                                Classes will be live on Google Meet, offering a better experience than physical classes. We won't proceed until everything is clear to you. You
-                                                                                                can join from your mobile or laptop, saving you time and allowing flexibility from anywhere.
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <!-- FAQ Item 8 Endded -->
-
-                                                                                        <!--                 Ended FAQ's -->
-                                                                                        <div class="container mt-6">
-                                                                                            <div class="card course-card mb-4">
-                                                                                                <h2 style="font-size: 22px;">
-                                                                                                    <i class="fa-solid fa-award"></i>
-                                                                                                    Certificate Of Completion Of Mentorship By Dilawar
-                                                                                                </h2>
-                                                                                                <div class="card">
-                                                                                                    <a href="certificate-of-completion.jpeg" data-fancybox="gallery" data-caption="Certification">
-                                                                                                        <img src="certificate-of-completion.jpeg" class="card-img-top" alt="Certification" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <!-- Registration Process -->
-
-                                                                                        <div class="container mt-6">
-                                                                                            <div class="card course-card">
-                                                                                                <h2>
-                                                                                                    <i class="fa-solid fa-file-pen" style="color: #0d6efd; font-size: 30px;"></i>
-                                                                                                    Registration Process
-                                                                                                </h2>
-
-                                                                                                <div class="course">
-                                                                                                    <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                                                                                    <b class="modules">Step 01:</b> Submit your complete details (Name, Father Name, CNIC and WhatsApp Number) along with the registration fee
-                                                                                                    (Rs. 5000) just to filter out non-serious/interested persons. (3-days refund guarantee)
-                                                                                                </div>
-                                                                                                <div class="course">
-                                                                                                    <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                                                                                    <b class="modules">Step 02:</b> Attend classes for the 3 days after your registration. If you decide not to continue with us within this
-                                                                                                    period, you can request a refund of your registration fee. We'll refund your registration fee as per
-                                                                                                    <a href="refund-policy.html">our policy</a> without any charges.
-                                                                                                </div>
-                                                                                                <div class="course">
-                                                                                                    <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
-                                                                                                    <b class="modules">Step 03:</b> If you find this mentorship interesting and valuable, continue by submitting the remaining fee.
-                                                                                                </div>
-                                                                                                <p><strong>Important Note:</strong> When your registration is completed, We'll send you a receipt of your payment on your WhatsApp account.</p>
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <!-- FEE STRUCTURE -->
-                                                                                        <div class="container" style="margin-top: 15px;" id="fee-structure">
-                                                                                            <h1 class="text-center mb-2" id="text-size">Fee Structure</h1>
-                                                                                            <div class="row">
-                                                                                                <!-- Start of 6 months mentorship program -->
-                                                                                                <div class="col-md-6 mb-4">
-                                                                                                    <!-- Changed col-md-6 to col-md-12 -->
-                                                                                                    <div class="feature">
-                                                                                                        <div class="card">
-                                                                                                            <div class="card-header">
-                                                                                                                <h3>6 Months Mentorship Program</h3>
-                                                                                                                <i class="fas fa-calendar-alt"></i> Class Days: Weekend (Saturday, Sunday)
-                                                                                                            </div>
-                                                                                                            <div class="card-body">
-                                                                                                                <p><i class="fas fa-clock"></i> Est. Duration: 6 Months (48 Days)</p>
-                                                                                                                <p><i class="fa-solid fa-file-invoice-dollar"></i> Registration Fee: Rs. 5,000 ($18) with 3-days refund guarantee</p>
-                                                                                                                <p><i class="fas fa-money-bill"></i> Mentorship Actual Fee: Rs. <del>30,000</del></p>
-                                                                                                                <p>
-                                                                                                                    <i class="fa-solid fa-money-bill-1"></i> Fee After Discount: Rs. 20,000 (70$) One-time payment only.
-                                                                                                                    <span style="color: #00af15;">(1 year web hosting and additional courses included for FREE)</span>
-                                                                                                                </p>
-                                                                                                                <p>
-                                                                                                                    <i class="fas fa-money-bill-wave"></i> 6 Months Instalments Fee: Rs. 5,500 ($20) per month
-                                                                                                                    <span style="color: #ff2020;">(One year web hosting and optional courses NOT included)</span>
-                                                                                                                </p>
-                                                                                                                <!-- <p><i class="fas fa-user-friends"></i> 1-1 Mentorship Fee: Rs. 30,000 (Registration fee included with Lifetime FREE web hosting)</p> -->
-                                                                                                                <!-- <p style="background-color: #dc3545!important;
+                                  <!-- FEE STRUCTURE -->
+                    <div class="container" style="margin-top: 15px;" id="fee-structure">
+                      <h1 class="text-center mb-2" id="text-size">Fee Structure</h1>
+                      <div class="row">
+                     <!-- Start of 6 months mentorship program -->
+                     <div class="col-md-6 mb-4">
+                      <!-- Changed col-md-6 to col-md-12 -->
+                      <div class="feature">
+                        <div class="card">
+                          <div class="card-header">
+                            <h3>6 Months Mentorship Program</h3>
+                            <i class="fas fa-calendar-alt"></i> Class Days: Weekend (Saturday, Sunday)
+                          </div>
+                          <div class="card-body">
+                            <p><i class="fas fa-clock"></i> Est. Duration: 6 Months (48 Days)</p>
+                            <p> <i class="fa-solid fa-file-invoice-dollar"></i> Registration Fee: Rs. 5,000 ($18) with 3-days refund guarantee</p>
+                            <p><i class="fas fa-money-bill"></i> Mentorship Actual Fee: Rs. <del>30,000</del></p>
+                            <p><i class="fa-solid fa-money-bill-1"></i> Fee After Discount: Rs. 20,000 (70$) One-time payment only. <span style="color: #00af15;">(1 year web hosting and additional courses included for FREE)</span></p>
+                            <p><i class="fas fa-money-bill-wave"></i> 6 Months Instalments Fee: Rs. 5,500 ($20) per month <span style="color: #ff2020;">(One year web hosting and optional courses NOT included)</span></p>
+                            <!-- <p><i class="fas fa-user-friends"></i> 1-1 Mentorship Fee: Rs. 30,000 (Registration fee included with Lifetime FREE web hosting)</p> -->
+                            <!-- <p style="background-color: #dc3545!important;
                             color: white;
                             border-radius: 10px;
                             padding: 2px 8px 2px 8px; width: fit-content; margin: 0 auto; margin-bottom: 5px;
                             margin-top: 15px;">FREE Web Hosting Not Included</p> -->
-                                                                                                                <a
-                                                                                                                    class="apply-button"
-                                                                                                                    href="https://mentorshipbydilawar.online/6-months-registration"
-                                                                                                                    style="background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%); padding: 10px 35px;"
-                                                                                                                >
-                                                                                                                    Get Started <i class="fa-solid fa-right-to-bracket"></i>
-                                                                                                                </a>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
+                            <a class="apply-button" href="https://mentorshipbydilawar.online/6-months-registration" style="background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%); padding: 10px 35px;">Get Started <i class="fa-solid fa-right-to-bracket"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>    
+                      
+                        <!-- End of 6 months mentorship program -->
 
-                                                                                                <!-- End of 6 months mentorship program -->
-
-                                                                                                <!-- Start of 2 months mentorship program -->
-                                                                                                <div class="col-md-6 mb-4">
-                                                                                                    <div class="feature">
-                                                                                                        <div class="card">
-                                                                                                            <div class="card-header">
-                                                                                                                <h3>2 Months Mentorship Program</h3>
-                                                                                                                <i class="fas fa-calendar-alt"></i> Class Days: 6 (Monday to Saturday)
-                                                                                                            </div>
-                                                                                                            <div class="card-body">
-                                                                                                                <p><i class="fas fa-clock"></i> Est. Duration: 2 Months (48 Days)</p>
-                                                                                                                <p><i class="fa-solid fa-file-invoice-dollar"></i> Registration Fee: Rs. 5,000 ($18) with 3-days refund guarantee</p>
-                                                                                                                <p><i class="fas fa-money-bill"></i> Mentorship Actual Fee: Rs. <del>30,000</del></p>
-                                                                                                                <p>
-                                                                                                                    <i class="fa-solid fa-money-bill-1"></i> Fee After Discount: Rs. 20,000 ($70) One-time payment only.
-                                                                                                                    <span style="color: #00af15;">(1 year web hosting and additional courses included for FREE)</span>
-                                                                                                                </p>
-                                                                                                                <p>
-                                                                                                                    <i class="fas fa-money-bill-wave"></i> 2 Months Instalments Fee: Rs. 12,500 ($45) per month
-                                                                                                                    <span style="color: #ff2020;">(One year FREE web hosting included, Optional courses NOT included)</span>
-                                                                                                                </p>
-                                                                                                                <!-- <p><i class="fas fa-user-friends"></i> 1-1 Mentorship Fee: Rs. 30,000 (Registration fee included with Lifetime FREE web hosting)</p> -->
-                                                                                                                <!-- <p style="background: #00c56a;
+                        <!-- Start of 2 months mentorship program -->
+                        <div class="col-md-6 mb-4">
+                          <div class="feature">
+                            <div class="card"> 
+                              <div class="card-header">
+                                <h3>2 Months Mentorship Program</h3>
+                                <i class="fas fa-calendar-alt"></i> Class Days: 6 (Monday to Saturday)
+                              </div>
+                              <div class="card-body">
+                                <p><i class="fas fa-clock"></i> Est. Duration: 2 Months (48 Days)</p>
+                                <p> <i class="fa-solid fa-file-invoice-dollar"></i> Registration Fee: Rs. 5,000 ($18) with 3-days refund guarantee</p>
+                                <p><i class="fas fa-money-bill"></i> Mentorship Actual Fee: Rs. <del>30,000</del></p>
+                                <p><i class="fa-solid fa-money-bill-1"></i> Fee After Discount: Rs. 20,000 ($70) One-time payment only. <span style="color: #00af15;">(1 year web hosting and additional courses included for FREE)</span></p>
+                                <p><i class="fas fa-money-bill-wave"></i> 2 Months Instalments Fee: Rs. 12,500 ($45) per month <span style="color: #ff2020;">(One year FREE web hosting included, Optional courses NOT included)</span></p>
+                                <!-- <p><i class="fas fa-user-friends"></i> 1-1 Mentorship Fee: Rs. 30,000 (Registration fee included with Lifetime FREE web hosting)</p> -->
+                                <!-- <p style="background: #00c56a;
                                 color: white;
                                 border-radius: 10px;
                                 padding: 2px 8px 2px 8px; width: fit-content; margin: 0 auto; margin-bottom: 5px;
                                 margin-top: 15px;">Recommended - SAVE upto Rs. 15,000 and 4 months</p> -->
-                                                                                                                <a
-                                                                                                                    class="apply-button"
-                                                                                                                    href="https://mentorshipbydilawar.online/2-months-registration"
-                                                                                                                    style="background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%); padding: 10px 35px;"
-                                                                                                                >
-                                                                                                                    Get Started <i class="fa-solid fa-right-to-bracket"></i>
-                                                                                                                </a>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <!-- <h1 class="text-center mt-2 mb-4">Watch This Video for Better Clarification of the Fee Structure <i class="fas fa-video"></i></h1>
+                                <a class="apply-button" href="https://mentorshipbydilawar.online/2-months-registration" style="background-image: linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%); padding: 10px 35px;">Get Started <i class="fa-solid fa-right-to-bracket"></i></a>
+                              </div>
+                            </div>   
+                          </div>
+                        </div>
+                      </div>
+                        <!-- <h1 class="text-center mt-2 mb-4">Watch This Video for Better Clarification of the Fee Structure <i class="fas fa-video"></i></h1>
                         <div class="col-md-12 mb-4">
                           <div class="feature" style="margin: 15px;">
                             <div class="card">
@@ -1049,17 +960,17 @@
                             </div>
                           </div>
                         </div> -->
-                                                                                        </div>
-                                                                                        <!-- End of 2 months mentorship program -->
-                                                                                        <div style="text-align: center; margin: -10px 5px 10px 5px; padding: 5px;">
-                                                                                            <small class="text-muted">
-                                                                                                <b style="color: #ff2020;">Important Note:</b>
-                                                                                                For registration, You need to pay Rs. 5,000 only and send invoice on our
-                                                                                                <a href="https://api.whatsapp.com/send?phone=923104212713">WhatsApp</a>. There is a special discount for orphans.
-                                                                                            </small>
-                                                                                        </div>
-                                                                                        <!-- Added Worth of Program -->
-                                                                                        <!-- <h1 class="text-center">Total Worth of This Mentorship Program</h1>
+                    </div>
+                       <!-- End of 2 months mentorship program -->
+                        <div style="text-align: center; margin: -10px 5px 10px 5px; padding: 5px;">
+                          <small class="text-muted">
+                            <b style="color: #ff2020;">Important Note:</b> 
+                            For registration, You need to pay Rs. 5,000 only and send invoice on our <a href="https://api.whatsapp.com/send?phone=923104212713">WhatsApp</a>. There is a special discount for orphans.
+                        </small>
+                        
+        </div>
+        <!-- Added Worth of Program -->
+<!-- <h1 class="text-center">Total Worth of This Mentorship Program</h1>
 <div class="mb-4" style="margin: 10px;">
 <div class="feature">
 <table class="table table-bordered">
@@ -1078,8 +989,8 @@
             <td>WordPress Development</td>
             <td>12,000</td>
         </tr> -->
-                                                                                        <!-- Add other course rows here -->
-                                                                                        <!-- <tr>
+        <!-- Add other course rows here -->
+        <!-- <tr>
           <td>Blogging Expert</td>
           <td>10,000</td>
       </tr>
@@ -1128,225 +1039,191 @@
 </div>
 </div>
 </div> -->
-                                                                                        <!-- Ended Worth of Program -->
-                                                                                        <!-- WhatsApp button container -->
-                                                                                        <div class="whatsapp-container" id="whatsapp-container">
-                                                                                            <a
-                                                                                                href="https://api.whatsapp.com/send?phone=923104212713&text=I%20need%20details%20about%20your%20mentorship%20program..."
-                                                                                                target="_blank"
-                                                                                                rel="noopener noreferrer"
-                                                                                            >
-                                                                                                <img src="whatsapp.png" alt="WAbusiness" />
-                                                                                            </a>
-                                                                                        </div>
+<!-- Ended Worth of Program -->
+                             <!-- WhatsApp button container -->
+    <div class="whatsapp-container" id="whatsapp-container">
+        <a href="https://api.whatsapp.com/send?phone=923104212713&text=I%20need%20details%20about%20your%20mentorship%20program..." target="_blank" rel="noopener noreferrer">
+            <img src="whatsapp.png" alt="WAbusiness">
+        </a>
+    </div>
 
-                                                                                        <script>
-                                                                                            // Wait for the document to fully load
-                                                                                            document.addEventListener("DOMContentLoaded", function () {
-                                                                                                // Delay the initial display by 5 seconds
-                                                                                                setTimeout(function () {
-                                                                                                    // Display the WhatsApp button
-                                                                                                    var whatsappContainer = document.getElementById("whatsapp-container");
-                                                                                                    whatsappContainer.style.display = "block";
-                                                                                                }, 5000);
-                                                                                            });
-                                                                                        </script>
-                                                                                        <!-- Ended WhatsApp button container -->
+    <script>
+        // Wait for the document to fully load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Delay the initial display by 5 seconds
+            setTimeout(function() {
+                // Display the WhatsApp button
+                var whatsappContainer = document.getElementById('whatsapp-container');
+                whatsappContainer.style.display = 'block';
+            }, 5000);
+        });
+    </script>
+          <!-- Ended WhatsApp button container -->
 
-                                                                                        <!-- <a href="https://api.whatsapp.com/send?phone=923104212713&text=Getting%20started%20with%20FREE%20consultation..." target="_blank" class="btn btn-success whatsapp2" style="margin-bottom: 10px;">
+                        <!-- <a href="https://api.whatsapp.com/send?phone=923104212713&text=Getting%20started%20with%20FREE%20consultation..." target="_blank" class="btn btn-success whatsapp2" style="margin-bottom: 10px;">
                           <i class="fab fa-whatsapp"></i> Request Your FREE 1:1 Consultation Now!
                         </a> -->
-                                                                                        <hr />
-                                                                                        <footer class="footer">
-                                                                                            <p class="text-center">
-                                                                                                © 2024 All Rights Reserved <a href="https://marketoze.agency">Marketoze</a> | <a href="https://mentorshipbydilawar.online">Home</a> |
-                                                                                                <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Privacy Policy</a> |
-                                                                                                <a href="https://mentorshipbydilawar.online/refund-policy">Refund Policy</a> | Designed and Developed By
-                                                                                                <a href="https://dilawar.vercel.app">Dilawar</a> In 🇵🇰
-                                                                                            </p>
-                                                                                            <!-- <div class="col-md-6"> -->
-                                                                                            <div class="payment-icons" style="margin-bottom: 10px;">
-                                                                                                <h2 class="text-center">Our Payment Partners</h2>
-                                                                                                <img src="bank-transfer-svgrepo-com.svg" alt="bank" class="payment-card" />
-                                                                                                <img src="sadapay.png" alt="sadapay" class="payment-card" />
-                                                                                                <img src="nayapay.png" alt="nayapay" class="payment-card" />
-                                                                                                <img src="easypaisa.png" alt="easypaisa" class="payment-card" />
-                                                                                                <img src="jazzcash.png" alt="jazzcash" class="payment-card" />
-                                                                                            </div>
-                                                                                            <ul class="list-inline social-icons text-center" style="font-size: 25px;">
-                                                                                                <h2>Stay Connected</h2>
-                                                                                                <li class="list-inline-item">
-                                                                                                    <a href="https://facebook.com/mentorshipbydilawar"><i class="fab fa-facebook-f"></i></a>
-                                                                                                </li>
-                                                                                                <li class="list-inline-item">
-                                                                                                    <a href="https://instagram.com/mentorshipbydilawar"><i class="fab fa-instagram"></i></a>
-                                                                                                </li>
-                                                                                                <li class="list-inline-item">
-                                                                                                    <a href="https://chat.whatsapp.com/JzOLKF5oRUc86ezzrTwdja"><i class="fab fa-whatsapp"></i></a>
-                                                                                                </li>
-                                                                                                <li class="list-inline-item">
-                                                                                                    <a href="https://tiktok.com/@mentorshipbydilawar"><i class="fab fa-tiktok"></i></a>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </footer>
-                                                                                        <!-- Bootstrap JS and Font Awesome JS Links (for icons) -->
-                                                                                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-                                                                                        <script>
-                                                                                            // Use setTimeout to delay the execution of Toastify
-                                                                                            setTimeout(function () {
-                                                                                                Toastify({
-                                                                                                    text: "Thank you for choosing Mentorship By Dilawar as your trusted learning partner 🤗",
-                                                                                                    duration: 5000,
-                                                                                                    gravity: "bottom", // Display at the bottom
-                                                                                                    position: "center", // Display on the right side
-                                                                                                    style: {
-                                                                                                        background: "linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%)",
-                                                                                                        borderRadius: "30px", // Set border radius
-                                                                                                        margin: "5px",
-                                                                                                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Add box shadow
-                                                                                                    },
-                                                                                                }).showToast();
-                                                                                            }, 5000); // 5 seconds after the page load
-                                                                                        </script>
-                                                                                        <script src="script.js"></script>
-                                                                                        <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
-                                                                                        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-                                                                                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-                                                                                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-                                                                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-                                                                                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-                                                                                        <script
-                                                                                            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
-                                                                                            integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
-                                                                                            crossorigin="anonymous"
-                                                                                            referrerpolicy="no-referrer"
-                                                                                        ></script>
-                                                                                        <script>
-                                                                                            $(document).ready(function () {
-                                                                                                $('[data-fancybox="gallery"]').fancybox({
-                                                                                                    animationEffect: "zoom-in-out",
-                                                                                                    transitionEffect: "circular",
-                                                                                                    buttons: ["zoom", "close"],
-                                                                                                });
-                                                                                            }); // Added SA
+                        <hr>
+                        <footer class="footer">
+                          
+                               <p class="text-center">© 2024 All Rights Reserved <a href="https://marketoze.agency">Marketoze</a>  | <a href="https://mentorshipbydilawar.online">Home</a> | <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Privacy Policy</a> | <a href="https://mentorshipbydilawar.online/refund-policy">Refund Policy</a> | Designed and Developed By <a href="https://dilawar.vercel.app">Dilawar</a> In 🇵🇰</p>
+                              <!-- <div class="col-md-6"> -->
+                                <div class="payment-icons" style="margin-bottom: 10px;">
+                                  <h2 class="text-center">Our Payment Partners</h2>
+                                  <img src="bank-transfer-svgrepo-com.svg" alt="bank" class="payment-card">
+                                  <img src="sadapay.png" alt="sadapay" class="payment-card">
+                                  <img src="nayapay.png" alt="nayapay" class="payment-card">
+                                  <img src="easypaisa.png" alt="easypaisa" class="payment-card">
+                                  <img src="jazzcash.png" alt="jazzcash" class="payment-card">
+                                </div>
+                          <ul class="list-inline social-icons text-center" style="font-size: 25px;"><h2>Stay Connected</h2>
+                                  <li class="list-inline-item">
+                                      <a href="https://facebook.com/mentorshipbydilawar"><i class="fab fa-facebook-f"></i></a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <a href="https://instagram.com/mentorshipbydilawar"><i class="fab fa-instagram"></i></a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <a href="https://chat.whatsapp.com/JzOLKF5oRUc86ezzrTwdja"><i class="fab fa-whatsapp"></i></a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                    <a href="https://tiktok.com/@mentorshipbydilawar"><i class="fab fa-tiktok"></i></a>
+                                </li>
+                                
+                              </ul>
+                        </footer>
+          <!-- Bootstrap JS and Font Awesome JS Links (for icons) -->
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+          <script>
+            // Use setTimeout to delay the execution of Toastify
+            setTimeout(function() {
+              Toastify({
+                text: "Thank you for choosing Mentorship By Dilawar as your trusted learning partner 🤗",
+                duration: 5000,
+                gravity: "bottom", // Display at the bottom
+                position: "center", // Display on the right side
+                style: {
+                  background: "linear-gradient(to right, rgb(0, 221, 255) 0%, rgb(255, 0, 212) 100%)",
+                  borderRadius: "30px", // Set border radius
+                  margin: "5px",
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Add box shadow
+                },
+              }).showToast();
+            }, 5000); // 5 seconds after the page load
+          </script>
+ <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>                 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+    $(document).ready(function() {
+      $('[data-fancybox="gallery"]').fancybox({
+        animationEffect: "zoom-in-out",
+        transitionEffect: "circular",
+        buttons: ["zoom", "close"],
+      });
+    });     // Added SA
 
-                                                                                            // Wait for the document to be fully loaded
-                                                                                            document.addEventListener("DOMContentLoaded", function () {
-                                                                                                // Delay the display of the message by 5 seconds (5000 milliseconds)
-                                                                                                setTimeout(function () {
-                                                                                                    Swal.fire({
-                                                                                                        title: "Register Now!",
-                                                                                                        text:
-                                                                                                            "Registrations for the new batch are now open. Don't miss out this incredible opportunity and request your 3-days FREE classes now! 🥳",
-                                                                                                        icon: "info",
-                                                                                                        confirmButtonText: "Close",
-                                                                                                    });
-                                                                                                }, 8000);
-                                                                                            });
-                                                                                            // Added Connefti
-                                                                                            // Half Screen Animation
-                                                                                            // Wrap your animation code in a setTimeout function
-                                                                                            setTimeout(function () {
-                                                                                                const count = 200,
-                                                                                                    defaults = {
-                                                                                                        origin: { y: 0.7 },
-                                                                                                        zIndex: 99999, // Set zIndex to 99999
-                                                                                                    };
+     // Wait for the document to be fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Delay the display of the message by 5 seconds (5000 milliseconds)
+            setTimeout(function () {
+                Swal.fire({
+                    title: 'Register Now!',
+                    text: "Registrations for the new batch are now open. Don't miss out this incredible opportunity and request your 3-days FREE classes now! 🥳",
+                    icon: 'info',
+                    confirmButtonText: 'Close'
+                });
+            }, 8000);
+        });
+     // Added Connefti
+     // Half Screen Animation
+// Wrap your animation code in a setTimeout function
+setTimeout(function() {
+  const count = 200,
+    defaults = {
+      origin: { y: 0.7 },
+      zIndex: 99999, // Set zIndex to 99999
+    };
 
-                                                                                                function fire(particleRatio, opts) {
-                                                                                                    confetti(
-                                                                                                        Object.assign({}, defaults, opts, {
-                                                                                                            particleCount: Math.floor(count * particleRatio),
-                                                                                                        })
-                                                                                                    );
-                                                                                                }
+  function fire(particleRatio, opts) {
+    confetti(
+      Object.assign({}, defaults, opts, {
+        particleCount: Math.floor(count * particleRatio),
+      })
+    );
+  }
 
-                                                                                                fire(0.25, {
-                                                                                                    spread: 26,
-                                                                                                    startVelocity: 55,
-                                                                                                });
+  fire(0.25, {
+    spread: 26,
+    startVelocity: 55,
+  });
 
-                                                                                                fire(0.2, {
-                                                                                                    spread: 60,
-                                                                                                });
+  fire(0.2, {
+    spread: 60,
+  });
 
-                                                                                                fire(0.35, {
-                                                                                                    spread: 100,
-                                                                                                    decay: 0.91,
-                                                                                                    scalar: 0.8,
-                                                                                                });
+  fire(0.35, {
+    spread: 100,
+    decay: 0.91,
+    scalar: 0.8,
+  });
 
-                                                                                                fire(0.1, {
-                                                                                                    spread: 120,
-                                                                                                    startVelocity: 25,
-                                                                                                    decay: 0.92,
-                                                                                                    scalar: 1.2,
-                                                                                                });
+  fire(0.1, {
+    spread: 120,
+    startVelocity: 25,
+    decay: 0.92,
+    scalar: 1.2,
+  });
 
-                                                                                                fire(0.1, {
-                                                                                                    spread: 120,
-                                                                                                    startVelocity: 45,
-                                                                                                });
-                                                                                            }, 8000); // 10 seconds delay (10,000 milliseconds)
-                                                                                            // Full screen animation
-                                                                                            // Wrap your animation code in a setTimeout function
-                                                                                            setTimeout(function () {
-                                                                                                const duration = 15 * 1000,
-                                                                                                    animationEnd = Date.now() + duration,
-                                                                                                    defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 99999 };
+  fire(0.1, {
+    spread: 120,
+    startVelocity: 45,
+  });
+}, 8000); // 10 seconds delay (10,000 milliseconds)
+     // Full screen animation 
+    // Wrap your animation code in a setTimeout function
+setTimeout(function() {
+  const duration = 15 * 1000,
+    animationEnd = Date.now() + duration,
+    defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 99999 };
 
-                                                                                                function randomInRange(min, max) {
-                                                                                                    return Math.random() * (max - min) + min;
-                                                                                                }
+  function randomInRange(min, max) {
+    return Math.random() * (max - min) + min;
+  }
 
-                                                                                                const interval = setInterval(function () {
-                                                                                                    const timeLeft = animationEnd - Date.now();
+  const interval = setInterval(function() {
+    const timeLeft = animationEnd - Date.now();
 
-                                                                                                    if (timeLeft <= 0) {
-                                                                                                        return clearInterval(interval);
-                                                                                                    }
+    if (timeLeft <= 0) {
+      return clearInterval(interval);
+    }
 
-                                                                                                    const particleCount = 50 * (timeLeft / duration);
+    const particleCount = 50 * (timeLeft / duration);
 
-                                                                                                    // since particles fall down, start a bit higher than random
-                                                                                                    confetti(
-                                                                                                        Object.assign({}, defaults, {
-                                                                                                            particleCount,
-                                                                                                            origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
-                                                                                                        })
-                                                                                                    );
-                                                                                                    confetti(
-                                                                                                        Object.assign({}, defaults, {
-                                                                                                            particleCount,
-                                                                                                            origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
-                                                                                                        })
-                                                                                                    );
-                                                                                                }, 250);
-                                                                                            }, 10000); // 10 seconds delay (11,000 milliseconds)
-                                                                                        </script>
-                                                                                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                                                                                        <script>
-                                                                                            AOS.init();
-                                                                                        </script>
-                                                                                    </button>
-                                                                                </h2>
-                                                                            </div>
-                                                                        </button>
-                                                                    </h2>
-                                                                </div>
-                                                            </button>
-                                                        </h2>
-                                                    </div>
-                                                </button>
-                                            </h2>
-                                        </div>
-                                    </button>
-                                </h2>
-                            </div>
-                        </button>
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </body>
+    // since particles fall down, start a bit higher than random
+    confetti(
+      Object.assign({}, defaults, {
+        particleCount,
+        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+      })
+    );
+    confetti(
+      Object.assign({}, defaults, {
+        particleCount,
+        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+      })
+    );
+  }, 250);
+}, 10000); // 10 seconds delay (11,000 milliseconds)
+  </script>    
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>                 
+</body>
 </html>
