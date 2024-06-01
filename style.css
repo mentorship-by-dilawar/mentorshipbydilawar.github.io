@@ -71,6 +71,9 @@
     padding: 10px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
 }
 .modal-body {
     padding: 8px;
