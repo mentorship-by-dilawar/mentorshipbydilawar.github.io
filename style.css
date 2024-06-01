@@ -29,5 +29,13 @@
   .p-justify{
     text-align: justify;
   }
+  .modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 3.5rem); /* Adjust gap from navbar */
+}
+.modal-content {
+    margin-top: 3.5rem; /* Additional margin from top */
+}
 
  
