@@ -42,10 +42,19 @@ document.addEventListener('DOMContentLoaded', function () {
       `
     };
 
+    if (!seoLinks || !modalBody || !modalTitle || !seoModal) {
+      console.error('Failed to find required elements.');
+      return;
+    }
+
     seoLinks.forEach(link => {
       link.addEventListener('click', function (event) {
         event.preventDefault();
         const contentKey = this.getAttribute('data-content');
+        if (!contentKey || !seoContent[contentKey]) {
+          console.error('Invalid content key or content not found.');
+          return;
+        }
         modalTitle.textContent = contentKey.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase()) + ' SEO';
         modalBody.innerHTML = seoContent[contentKey];
         seoModal.show();
