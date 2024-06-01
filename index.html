@@ -487,81 +487,9 @@ td {
 
 
               <div class="course">
-                <b class="modules">Search Engine Optimization 06:</b> How to <b>rank websites and web apps organically</b> on search engines through Search Engine Optimization (SEO). 
-                It includes <a id="onPageLink">On-Page SEO</a>, <a id="offPageLink">Off-Page SEO</a>, <a id="technicalLink">Technical SEO</a>, Local SEO (List and rank local businesses on google), E-Commerce SEO and YouTube SEO.
+                <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
+                <b class="modules">Search Engine Optimization 06:</b> How to <b>rank websites and web apps organically</b> on search engines through Search Engine Optimization (SEO). It includes On-Page SEO (Content Quality, Image Optimization, Keywords, HTML Tags, Responsive Design, Internal &amp; External Links, Meta Data, URL), Off-Page SEO (Backlinks, Guest Posting, Social Promotions, Listings, Podcasts, Reviews), Technical SEO (Website Speed, Structured Data, Canonicalization, XML Sitemap, SSL and HTTPS, Social Sharing Buttons), Local SEO (List and rank local businesses on google), E-Commerce SEO and YouTube SEO.
             </div>
-            
-            <!-- On-Page SEO Modal -->
-            <div id="onPageModal" class="modal">
-                <div class="modal-content text-center">
-                    <div class="modal-header">
-                        <span class="close-btn" onclick="closeModal('onPageModal')">&times;</span>
-                        <h2>On-Page SEO</h2>
-                    </div>
-                    <div class="modal-body">
-                        <ul>
-                            <li>Content Quality</li>
-                            <li>Image Optimization</li>
-                            <li>Keywords</li>
-                            <li>HTML Tags</li>
-                            <li>Responsive Design</li>
-                            <li>Internal & External Links</li>
-                            <li>Meta Data</li>
-                            <li>URL</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="close-footer-btn" onclick="closeModal('onPageModal')">Close</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Off-Page SEO Modal -->
-            <div id="offPageModal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close-btn" onclick="closeModal('offPageModal')">&times;</span>
-                        <h2>Off-Page SEO</h2>
-                    </div>
-                    <div class="modal-body">
-                        <ul>
-                            <li>Backlinks</li>
-                            <li>Guest Posting</li>
-                            <li>Social Promotions</li>
-                            <li>Listings</li>
-                            <li>Podcasts</li>
-                            <li>Reviews</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="close-footer-btn" onclick="closeModal('offPageModal')">Close</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Technical SEO Modal -->
-            <div id="technicalModal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close-btn" onclick="closeModal('technicalModal')">&times;</span>
-                        <h2>Technical SEO</h2>
-                    </div>
-                    <div class="modal-body">
-                        <ul>
-                            <li>Website Speed</li>
-                            <li>Structured Data</li>
-                            <li>Canonicalization</li>
-                            <li>XML Sitemap</li>
-                            <li>SSL and HTTPS</li>
-                            <li>Social Sharing Buttons</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="close-footer-btn" onclick="closeModal('technicalModal')">Close</button>
-                    </div>
-                </div>
-            </div>
-            
 
               <div class="course">
                   <!-- <span class="checkmark"><i class="fas fa-check"></i></span> -->
@@ -1309,46 +1237,5 @@ setTimeout(function() {
   <script>
   AOS.init();
 </script>                  -->
-<script>
-  // Get modal elements
-const onPageModal = document.getElementById('onPageModal');
-const offPageModal = document.getElementById('offPageModal');
-const technicalModal = document.getElementById('technicalModal');
-
-// Get link elements
-const onPageLink = document.getElementById('onPageLink');
-const offPageLink = document.getElementById('offPageLink');
-const technicalLink = document.getElementById('technicalLink');
-
-// Open modals
-onPageLink.onclick = function() {
-    onPageModal.style.display = 'block';
-}
-
-offPageLink.onclick = function() {
-    offPageModal.style.display = 'block';
-}
-
-technicalLink.onclick = function() {
-    technicalModal.style.display = 'block';
-}
-
-// Close modals
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = 'none';
-}
-
-// Close modals when clicking outside
-window.onclick = function(event) {
-    if (event.target == onPageModal) {
-        onPageModal.style.display = 'none';
-    } else if (event.target == offPageModal) {
-        offPageModal.style.display = 'none';
-    } else if (event.target == technicalModal) {
-        technicalModal.style.display = 'none';
-    }
-}
-
-</script>
 </body>
 </html>
