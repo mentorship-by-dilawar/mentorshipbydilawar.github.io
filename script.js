@@ -27,7 +27,7 @@ function showNotification(programType) {
 
     const toast = Toastify({
         text: message,
-        duration: 10000, // Duration in milliseconds (5 seconds)
+        duration: 5000, // Duration in milliseconds (5 seconds)
         close: true,
         gravity: "bottom", // Display position: "top" or "bottom"
         position: "center", // Alignment: "left", "center", or "right"
@@ -49,5 +49,5 @@ setInterval(() => {
     showNotification("1to1");
     setTimeout(() => {
         showNotification("2months");
-    }, 10000);
-}, 15000); // 10 seconds interval for alternating notifications
+    }, 5000);
+}, 20000); // 10 seconds interval for alternating notifications
