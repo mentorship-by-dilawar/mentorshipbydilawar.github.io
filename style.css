@@ -166,3 +166,6 @@
   margin-right: 12px; /* Space between icon and text */
   font-size: 20px;
 }
+.navbar{
+  border-radius: 8px !important;
+}
