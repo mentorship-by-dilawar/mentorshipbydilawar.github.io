@@ -115,7 +115,7 @@
 .toastify {
   position: fixed;
   bottom: 20px;
-  left: 10%;
+  /* left: 10%; */
   right: 10%;
   transform: translateX(-50%);
   max-width: 90%; /* Adjusted max-width to prevent full screen spread */
