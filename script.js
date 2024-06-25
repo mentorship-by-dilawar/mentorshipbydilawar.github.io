@@ -69,4 +69,4 @@ setInterval(() => {
     setTimeout(() => {
         showNotification("2months");
     }, 30000);
-}, 10000); 
+}, 15000); 
