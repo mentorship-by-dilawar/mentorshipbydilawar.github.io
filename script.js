@@ -68,5 +68,5 @@ setInterval(() => {
     showNotification("1to1");
     setTimeout(() => {
         showNotification("2months");
-    }, 10000);
-}, 20000); // 10 seconds interval for alternating notifications
+    }, 20000);
+}, 30000); 
