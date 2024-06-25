@@ -116,7 +116,7 @@
   position: fixed;
   bottom: 20px;
   left: 5%;
-  right: 10%;
+  right: 5%;
   transform: translateX(-50%);
   max-width: 90%; /* Adjusted max-width to prevent full screen spread */
   background-color: #444; /* Background color */
