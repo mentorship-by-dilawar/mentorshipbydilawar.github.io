@@ -115,14 +115,15 @@
 .toastify {
   position: fixed;
   bottom: 20px;
-  /* left: 10%; */
+  left: 5%;
   right: 10%;
   transform: translateX(-50%);
   max-width: 90%; /* Adjusted max-width to prevent full screen spread */
   background-color: #444; /* Background color */
+  width: fit-content !important;
   color: #fff;
   border-radius: 8px;
-  padding: 5px;
+  padding: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   display: flex;
