@@ -112,3 +112,55 @@
 .close-footer-btn:hover {
     background-color: #0056b3;
 }
+.toastify {
+  position: fixed;
+  bottom: 20px;
+  left: 10%;
+  right: 10%;
+  transform: translateX(-50%);
+  max-width: 90%; /* Adjusted max-width to prevent full screen spread */
+  background-color: #444; /* Background color */
+  color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out items */
+}
+.toastify__close {
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+.toastify__close:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover background color */
+}
+.toastify__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #4CAF50;
+  border-radius: 0 0 8px 8px;
+  z-index: 999;
+  transform-origin: left;
+  animation: progressAnimation 5s linear forwards;
+}
+@keyframes progressAnimation {
+  0% {
+      width: 100%;
+  }
+  100% {
+      width: 0;
+  }
+}
+.toastify__icon {
+  margin-right: 12px; /* Space between icon and text */
+  font-size: 20px;
+}
