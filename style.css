@@ -122,12 +122,12 @@
   background-color: #444; /* Background color */
   color: #fff;
   border-radius: 8px;
-  padding: 16px;
+  padding: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   display: flex;
   align-items: center; /* Center items vertically */
-  justify-content: space-between; /* Space out items */
+  /* justify-content: space-between;  */
 }
 .toastify__close {
   cursor: pointer;
@@ -148,7 +148,7 @@
   height: 4px;
   background-color: #4CAF50;
   border-radius: 0 0 8px 8px;
-  z-index: 999;
+  z-index: 9999999;
   transform-origin: left;
   animation: progressAnimation 5s linear forwards;
 }
