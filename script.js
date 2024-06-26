@@ -2,12 +2,12 @@
 const names = [
    "Ayesha", "Muhammad", "Fatima", "Ali", "Zainab", "Hassan", "Sana", "Umar", "Maryam", "Ahmed",
     "Safia", "Bilal", "Saba", "Tariq", "Amina", "Yasin", "Asma", "Ibrahim", "Amira", "Khalid",
-    "Laila", "Imran", "Bushra", "Yousef", "Rabia", "Mustafa", "Nadia", "Abdullah", "Naima", "Tahir",
+    "Laila", "Imran", "Bushra", "Yousif", "Rabia", "Mustafa", "Nadia", "Abdullah", "Naima", "Tahir",
     "Nimra", "Saad", "Hira", "Rehan", "Mariam", "Zain", "Areeba", "Fahad", "Khadija", "Junaid",
     "Anum", "Arslan", "Hiba", "Rizwan", "Zara", "Hamza", "Sara", "Shahid", "Mahnoor", "Kamran",
     "Nayab", "Danish", "Rania", "Sameer", "Saira", "Usman", "Noor", "Salman", "Maham", "Arif",
     "Kiran", "Farhan", "Lubna", "Wasim", "Hafsa", "Noman", "Farah", "Waleed", "Iqra", "Asad",
-    "Anam", "Zeeshan", "Rimsha", "Shehzad", "Uzma", "Asif", "Mahira", "Zubair", "Emaan", "Adeel",
+    "Anam", "Zeeshan", "Rimsha", "Shahzad", "Uzma", "Asif", "Mahira", "Zubair", "Emaan", "Adeel",
     "Nazia", "Rashid", "Sidra", "Waqas", "Alina", "Sohail", "Mehwish", "Azhar", "Aleena", "Moiz"
 ];
 
