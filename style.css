@@ -142,7 +142,7 @@
 .toastify__close:hover {
   background-color: rgba(255, 255, 255, 0.2); /* Hover background color */
 }
-.toastify__progress {
+/* .toastify__progress {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -153,7 +153,7 @@
   z-index: 9999999 !important;
   transform-origin: left;
   animation: progressAnimation 5s linear forwards;
-}
+} */
 @keyframes progressAnimation {
   0% {
       width: 100%;
