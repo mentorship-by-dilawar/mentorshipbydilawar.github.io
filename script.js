@@ -68,5 +68,5 @@ setInterval(() => {
     showNotification("1to1");
     setTimeout(() => {
         showNotification("2months");
-    }, 10000);
+    }, 15000);
 }, 20000); 
