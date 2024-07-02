@@ -1049,12 +1049,12 @@ td {
                             <!-- <p> <i class="fa-solid fa-file-invoice-dollar"></i> Registration Fee: Rs. 5,000 ($18) with 3-days refund guarantee</p> -->
                             <p><i class="fas fa-money-bill"></i> 1:1 Mentorship Program Actual Fee: Rs. <del>35,000</del></p>
                             <p><i class="fa-solid fa-money-bill-1"></i> Fee After Discount: Rs. 30,000 (110$) One-time payment only. <span style="color: #00af15;">(Lifetime web hosting and additional courses included for FREE)</span></p>
-                            <p><i class="fas fa-money-bill-wave"></i> <a id="1:1Mentorship">Click here to see what's included in 1:1 mentorship program</a></p>
+                            <p><i class="fa-solid fa-gift"></i> <a id="SepcialMentorship">Click here to see what's included in 1:1 mentorship program</a></p>
                             <!-- On-Page SEO Modal -->
-            <div id="onPageModal" class="modal">
+            <div id="SepcialMentorship" class="modal">
               <div class="modal-content">
                   <div class="modal-header">
-                      <span class="close-btn" onclick="closeModal('1:1Mentorship')">&times;</span>
+                      <span class="close-btn" onclick="closeModal('SepcialMentorship')">&times;</span>
                       <h2>1:1 Mentorship Includes:</h2>
                   </div>
                   <div class="modal-body">
@@ -1069,7 +1069,7 @@ td {
                       </ul>
                   </div>
                   <div class="modal-footer">
-                      <button class="close-footer-btn" onclick="closeModal('onPageModal')">Close</button>
+                      <button class="close-footer-btn" onclick="closeModal('SepcialMentorship')">Close</button>
                   </div>
               </div>
           </div>
@@ -1358,15 +1358,17 @@ setTimeout(function() {
   AOS.init();
 </script> -->
 <script>
-  // Get modal elements
+// Get modal elements
 const onPageModal = document.getElementById('onPageModal');
 const offPageModal = document.getElementById('offPageModal');
 const technicalModal = document.getElementById('technicalModal');
+const specialMentorshipModal = document.getElementById('specialMentorshipModal');
 
 // Get link elements
 const onPageLink = document.getElementById('onPageLink');
 const offPageLink = document.getElementById('offPageLink');
 const technicalLink = document.getElementById('technicalLink');
+const specialMentorshipLink = document.getElementById('specialMentorshipLink');
 
 // Open modals
 onPageLink.onclick = function() {
@@ -1379,6 +1381,10 @@ offPageLink.onclick = function() {
 
 technicalLink.onclick = function() {
     technicalModal.style.display = 'block';
+}
+
+specialMentorshipLink.onclick = function() {
+    specialMentorshipModal.style.display = 'block';
 }
 
 // Close modals
@@ -1394,8 +1400,11 @@ window.onclick = function(event) {
         offPageModal.style.display = 'none';
     } else if (event.target == technicalModal) {
         technicalModal.style.display = 'none';
+    } else if (event.target == specialMentorshipModal) {
+        specialMentorshipModal.style.display = 'none';
     }
 }
+
 </script>
 </body>
 </html>
