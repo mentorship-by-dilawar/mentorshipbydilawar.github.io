@@ -8,7 +8,7 @@ const names = [
     "Nayab", "Danish", "Rania", "Sameer", "Saira", "Usman", "Noor", "Salman", "Maham", "Arif",
     "Kiran", "Farhan", "Lubna", "Wasim", "Hafsa", "Noman", "Farah", "Waleed", "Iqra", "Asad",
     "Anam", "Zeeshan", "Rimsha", "Shahzad", "Uzma", "Asif", "Mahira", "Zubair", "Emaan", "Adeel",
-    "Nazia", "Rashid", "Sidra", "Waqas", "Alina", "Sohail", "Mehwish", "Azhar", "Aleena", "Moiz"
+    "Nazia", "Rashid", "Sidra", "Waqas", "Fabiha", "Sohail", "Mehwish", "Azhar", "alina", "Moiz"
 ];
 
 let remainingNames = [...names];
