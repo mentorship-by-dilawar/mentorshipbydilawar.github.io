@@ -70,3 +70,42 @@ setInterval(() => {
         showNotification("2months");
     }, 10000);
 }, 20000); 
+
+//  Auidio Play/Pause Logic
+   // Variable to keep track of the currently playing audio
+   let currentAudio = null;
+
+   // Function to play a specified audio by its ID
+   function playAudio(id) {
+       // Get the new audio element
+       const newAudio = document.getElementById(id);
+
+       // Check if there's a currently playing audio
+       if (currentAudio && currentAudio !== newAudio) {
+           // Pause and reset the current audio if it's different from the new audio
+           currentAudio.pause();
+           currentAudio.currentTime = 0;
+       }
+
+       // Play the new audio
+       newAudio.play();
+
+       // Update the currentAudio to the new audio
+       currentAudio = newAudio;
+   }
+
+   // Example usage: Automatically play audio when the page loads
+   window.addEventListener('load', () => {
+       playAudio('audio1'); // Start by playing audio1 when the page loads
+   });
+
+   // Example usage: Change audio after a specific time or event
+   setTimeout(() => {
+       playAudio('audio2'); // Change to playing audio2 after 5 seconds
+   }, 5000);
+
+   // You could also trigger playAudio based on other events, such as user interactions or external triggers.
+   // Example:
+   // document.addEventListener('someEvent', () => {
+   //     playAudio('audio3');
+   // });
