@@ -170,3 +170,6 @@
 .navbar{
   border-radius: 10px !important;
 }
+audio{
+  margin: 2px;
+}
