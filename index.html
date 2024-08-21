@@ -656,23 +656,22 @@ td {
   </div>
  </div>
 <script>
-        // Function to pause all audio elements
-        function pauseAllAudios() {
-            const audios = document.querySelectorAll('audio');
-            audios.forEach(audio => {
-                audio.pause();
-            });
-        }
+        let audio;
 
-        // Add event listeners to all audio elements
-        document.querySelectorAll('audio').forEach(audio => {
-            audio.addEventListener('play', function() {
-                // Pause all other audio elements when one starts playing
-                pauseAllAudios();
-                // Ensure the current audio resumes playing
-                this.play();
-            });
-        });
+function pauseAudio() {
+  // If audio is not undefined and if is playing, pause it
+  if (audio && !audio.paused) {
+    audio.pause();
+    audio.currentTime = 0; // Rewind track to beginning (if needed?)
+  }
+}
+
+function playAudio(src) {
+  pauseAudio();             // Pause any currently playing
+  audio = new Audio();      // Save a reference
+  audio.src = src;
+  audio.play();
+}
     </script>
 
 <!-- Ended students reviews -->
