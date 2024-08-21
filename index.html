@@ -655,7 +655,25 @@ td {
     <audio src="audio-3.ogg" controls></audio>
   </div>
  </div>
+<script>
+        // Function to pause all audio elements
+        function pauseAllAudios() {
+            const audios = document.querySelectorAll('audio');
+            audios.forEach(audio => {
+                audio.pause();
+            });
+        }
 
+        // Add event listeners to all audio elements
+        document.querySelectorAll('audio').forEach(audio => {
+            audio.addEventListener('play', function() {
+                // Pause all other audio elements when one starts playing
+                pauseAllAudios();
+                // Ensure the current audio resumes playing
+                this.play();
+            });
+        });
+    </script>
 
 <!-- Ended students reviews -->
 <!-- Sources of income -->
