@@ -656,22 +656,34 @@ td {
   </div>
  </div>
 <script>
-        let audio;
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const audios = document.querySelectorAll('audio');
+            let currentlyPlaying = null;
 
-function pauseAudio() {
-  // If audio is not undefined and if is playing, pause it
-  if (audio && !audio.paused) {
-    audio.pause();
-    audio.currentTime = 0; // Rewind track to beginning (if needed?)
-  }
-}
+            function pauseOtherAudios(currentAudio) {
+                audios.forEach(audio => {
+                    if (audio !== currentAudio && !audio.paused) {
+                        audio.pause();
+                    }
+                });
+            }
 
-function playAudio(src) {
-  pauseAudio();             // Pause any currently playing
-  audio = new Audio();      // Save a reference
-  audio.src = src;
-  audio.play();
-}
+            audios.forEach(audio => {
+                audio.addEventListener('play', function() {
+                    if (currentlyPlaying && currentlyPlaying !== this) {
+                        currentlyPlaying.pause();
+                    }
+                    currentlyPlaying = this;
+                    pauseOtherAudios(this);
+                });
+
+                audio.addEventListener('pause', function() {
+                    if (currentlyPlaying === this) {
+                        currentlyPlaying = null;
+                    }
+                });
+            });
+        });
     </script>
 
 <!-- Ended students reviews -->
