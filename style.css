@@ -173,3 +173,47 @@
 audio{
   margin-bottom: 5px;
 }
+#animate-btn{
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.6s ease;
+  position: relative;
+  overflow: hidden;
+  animation: pulse 2s infinite;
+}
+#animate-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  animation: none;
+  border: none;
+}
+
+#animate-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.4);
+  }
+  25% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+  }
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.4); 
+  }
+}
