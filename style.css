@@ -203,13 +203,17 @@ audio{
 @keyframes pulse512 {
  0% {
   box-shadow: 0 0 0 0 #05bada66;
+  transform: scale(1);
+
  }
 
- 70% {
+ 50% {
   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  transform: scale(1.1);
  }
 
  100% {
   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  transform: scale(1);
  }
 }
