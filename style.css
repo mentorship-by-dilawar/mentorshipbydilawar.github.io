@@ -168,13 +168,13 @@
   font-size: 20px;
 }
 .navbar{
-  border-radius: 10px !important;
+  border-radius: 30px !important;
 }
 audio{
   margin-bottom: 5px;
 }
 #animate-btn{
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 30px;
   border: none;
   display: block;
