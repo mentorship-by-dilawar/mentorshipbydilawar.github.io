@@ -36,7 +36,7 @@ function showNotification(programType) {
     let message;
 
     if (programType === "1to1") {
-        message = `<i class="fas fa-check-circle toastify__icon"></i>${name} Successfully Joined 1-1 Mentorship Program`;
+        message = `<i class="fas fa-check-circle toastify__icon"></i>${name} Successfully Joined Champion Mentorship Program`;
     } else if (programType === "2months") {
         message = `<i class="fas fa-check-circle toastify__icon"></i>${name} Successfully Joined 2 Months Mentorship Program`;
     } else {
