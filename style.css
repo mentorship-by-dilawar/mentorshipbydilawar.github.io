@@ -217,3 +217,7 @@ audio{
   transform: scale(1);
  }
 }
+
+.testimonials{
+  text-align: justify;
+}
